@@ -14,6 +14,20 @@ public class Candidato {
 
     public static final int MAX_EN_OFERTA = 4;
 
+    public Candidato(String nombre, String apodo, long precioFichaje, TRol especialidad){
+        if(nombre == null) throw new IllegalArgumentException("El nombre no puede ser nulo");
+        if(especialidad == null) throw new IllegalArgumentException("La especialidad no puede ser nula");
+        if(precioFichaje <= 0) throw new IllegalArgumentException("El precio de fichaje debe ser mayor a 0");
+
+        this.nombre = nombre;
+        this.apodo = apodo;
+        this.precioFichaje = precioFichaje;
+        this.especialidad = especialidad;
+
+        enOferta = false;
+        fichado = false;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -57,7 +71,4 @@ public class Candidato {
         fichado = true;
     }
 
-    public static void renovarOferta(List<Candidato> candidatos, Random random) {
-
-    }
 }
