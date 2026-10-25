@@ -5,8 +5,13 @@ import java.util.List;
 
 public class Ejecucion {
 
+    private int id;
     private TResultado resultado;
     private List<Participacion> participaciones;
+
+    public int getId() {
+        return id;
+    }
 
     public Ejecucion(TResultado resultado) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega");
