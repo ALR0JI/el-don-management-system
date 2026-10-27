@@ -7,11 +7,11 @@ public class Azar {
 
     private Azar() {}
 
-    public Random get() {
+    public static Random get() {
         throw new UnsupportedOperationException("Entrega 2");
     }
 
-    public void setSemilla(long semilla) {
+    public static void setSemilla(long semilla) {
         throw new UnsupportedOperationException("Entrega 2");
     }
 }

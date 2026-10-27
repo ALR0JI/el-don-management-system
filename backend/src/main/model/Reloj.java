@@ -7,18 +7,19 @@ public class Reloj {
     private Reloj() {}
 
     public static Reloj getInstance() {
-        throw new UnsupportedOperationException("Entrega 2");
+        if (instance == null) instance = new Reloj();
+        return instance;
     }
 
     public int horaActual() {
-        throw new UnsupportedOperationException("Entrega 2");
+        return hora;
     }
 
     public void avanzar() {
         throw new UnsupportedOperationException("Entrega 2");
     }
 
-    public void reiniciar() {
-        throw new UnsupportedOperationException("Entrega 2");
+    public static void reiniciar() {
+        instance = null;
     }
 }
