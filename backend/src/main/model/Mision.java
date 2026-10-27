@@ -30,7 +30,7 @@ public class Mision{
             throw new IllegalArgumentException("El botin de la mision ha de ser mayor que 0.");   
         }
 
-        if(probFracaso < 0 || probFracaso > 100){
+        if(probFracaso < 0.0 || probFracaso > 100.0){
             throw new IllegalArgumentException("La probabilidad de fracaso de la mision ha de estar entre 0 y 100.");   
         }
 
