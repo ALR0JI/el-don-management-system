@@ -2,9 +2,7 @@ package model;
 
 import org.junit.Test;
 
-import main.model.Mision;
-import main.model.TEstado;
-import main.model.TRol;
+import main.model.*;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,9 +1,7 @@
 package model; // Su paquete según la carpeta test/model
 
 // Importaciones de tus clases de dominio desde main.model
-import main.model.Objeto;
-import main.model.TUso;
-import main.model.TCategoria;
+import main.model.*;
 
 // Importaciones de JUnit
 import org.junit.Before;

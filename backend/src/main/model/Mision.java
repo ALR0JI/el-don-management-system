@@ -2,8 +2,10 @@ package main.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 public class Mision{
     public static final int DURACION_POR_DEFECTO = 12;
@@ -234,11 +236,133 @@ public class Mision{
         this.estado = TEstado.DISPONIBLE;
     }
 
+    public void añadirPrerrequisito(Mision m) {
+        comprobarEditable(); 
+
+        if (m == null) {
+            throw new IllegalArgumentException("El prerrequisito no puede ser nulo.");
+        }
+        if (m == this || m.getNombreClave().equals(this.nombreClave)) {
+            throw new IllegalArgumentException("Una misión no puede depender de sí misma."); 
+        }
+        if (prerrequisitos.contains(m)) {
+            throw new IllegalArgumentException("La misión " + m.getNombreClave() + " ya es un prerrequisito.");
+        }
+        if (m.dependeDe(this)) {
+            throw new IllegalArgumentException("No se puede añadir el prerrequisito porque se crearía un ciclo de dependencias."); // RT15[cite: 3]
+        }
+
+        prerrequisitos.add(m);
+        m.dependientes.add(this);
+        actualizarEstado(); //se vuelve a calcular el estado
+    }
+
+    
+    //comprueba si esta mision depende de la mision m para evitar ciclos
+    public boolean dependeDe(Mision m) {
+        Set<Mision> visitados = new HashSet<>();
+        return dependeDeRec(m, visitados);
+    }
+
+    private boolean dependeDeRec(Mision objetivo, Set<Mision> visitados) {
+        for (Mision pre : prerrequisitos) {
+            if (pre.equals(objetivo) || pre.getNombreClave().equals(objetivo.getNombreClave())) {
+                return true;
+            }
+            if (visitados.add(pre)) {
+                if (pre.dependeDeRec(objetivo, visitados)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    
+    public void eliminarPrerrequisito(Mision m) {
+        comprobarEditable(); 
+
+        if (m == null) {
+            throw new IllegalArgumentException("El prerrequisito no puede ser nulo.");
+        }
+        if (!prerrequisitos.contains(m)) {
+            throw new IllegalArgumentException("La misión " + m.getNombreClave() + " no es un prerrequisito directo.");
+        }
+
+        prerrequisitos.remove(m);
+        m.dependientes.remove(this); // Desvinculación de ambas listas
+        actualizarEstado(); //se vuelve a calcular el estado
+    }
+
+    //se desvincula la mision de sus prerrequisitos
+    public void desvincular() {
+        if (!dependientes.isEmpty()) {
+            throw new IllegalStateException("No se puede eliminar la misión porque hay otras misiones que dependen de ella.");
+        }
+        if (tieneEjecuciones()) {
+            throw new IllegalStateException("No se puede eliminar la misión porque ya tiene ejecuciones registradas."); 
+        }
+
+        //se elimina esta mision de la lista de dependientes de cada uno de sus prerrequisitos
+        for (Mision pre : prerrequisitos) {
+            pre.dependientes.remove(this);
+        }
+        prerrequisitos.clear();
+    }
+
+    
+    //se añade un nuevo rol y cantidad a la plantilla
+    public void añadirPlantillaRol(TRol rol, int cantidad) {
+        comprobarEditable(); 
+
+        if (rol == null) {
+            throw new IllegalArgumentException("El rol no puede ser nulo.");
+        }
+        if (cantidad <= 0) {
+            throw new IllegalArgumentException("La cantidad debe ser mayor que 0."); 
+        }
+
+        //comprovar que no exista ya una plantilla para ese rol 
+        for (PlantillaRol p : plantillasRol) {
+            if (p.getRol() == rol) {
+                throw new IllegalArgumentException("Ya existe una plantilla configurada para el rol: " + rol);
+            }
+        }
+
+        plantillasRol.add(new PlantillaRol(this, rol, cantidad));
+    }
+
+    //se elimina un rol de la plantilla
+    public void eliminarPlantillaRol(TRol rol) {
+        comprobarEditable();
+
+        if (rol == null) {
+            throw new IllegalArgumentException("El rol no puede ser nulo.");
+        }
+        if (rol.esConductor()) {
+            throw new IllegalArgumentException("No se permite eliminar el rol CONDUCTOR de la plantilla de una misión."); 
+        }
+
+        PlantillaRol aEliminar = null;
+        for (PlantillaRol p : plantillasRol) {
+            if (p.getRol() == rol) {
+                aEliminar = p;
+                break;
+            }
+        }
+
+        if (aEliminar == null) {
+            throw new IllegalArgumentException("El rol " + rol + " no forma parte de la plantilla de esta misión.");
+        }
+
+        plantillasRol.remove(aEliminar);
+    }
+
     public boolean puedeIniciarse(){
         return (estado == TEstado.DISPONIBLE || estado == TEstado.FALLIDA);
     }
 
-    //PARA LA SEGUNDA ENTREGA!
+    //PARA LA SEGUNDA ENTREGA
     public void añadirRequisitoMaterial(Objeto objeto, int cantidad) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega!");
     }
