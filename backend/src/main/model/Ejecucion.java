@@ -101,7 +101,7 @@ public class Ejecucion {
         for (RequisitoMaterial r : mision.getRequisitosMateriales()) {
             r.getObjeto().descontar(r.getCantidad());
         }
-        //mision.registrarEjecucion(e);
+        mision.registrarEjecucion(e);
         return e;
     }
 
