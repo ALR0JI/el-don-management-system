@@ -2,6 +2,7 @@ package main.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -362,6 +363,41 @@ public class Mision{
         return (estado == TEstado.DISPONIBLE || estado == TEstado.FALLIDA);
     }
 
+    public List<Mision> obtenerCadenaPrerrequisitos() {
+        Set<Mision> visitados = new HashSet<>();
+        List<Mision> resultado = new ArrayList<>();
+        obtenerCadenaPrerrequisitosRec(this, visitados, resultado);
+        return Collections.unmodifiableList(resultado);
+    }
+
+    private void obtenerCadenaPrerrequisitosRec(Mision actual, Set<Mision> visitados, List<Mision> resultado) {
+        for (Mision pre : actual.prerrequisitos) {
+            if (visitados.add(pre)) {
+                obtenerCadenaPrerrequisitosRec(pre, visitados, resultado);
+                resultado.add(pre);
+            }
+        }
+    }
+
+    public List<Mision> obtenerDesbloqueosPotenciales() {
+        List<Mision> resultado = new ArrayList<>();
+        for (Mision dep : dependientes) {
+            if (dep.getEstado() == TEstado.BLOQUEADA) {
+                resultado.add(dep);
+            }
+        }
+        return Collections.unmodifiableList(resultado);
+    }
+
+    void registrarEjecucion(Ejecucion e) {
+        if (e == null) {
+            throw new IllegalArgumentException("La ejecución no puede ser nula.");
+        }
+        if (!ejecuciones.contains(e)) {
+            ejecuciones.add(e);
+            actualizarEstado();
+        }
+    }
     //PARA LA SEGUNDA ENTREGA
     public void añadirRequisitoMaterial(Objeto objeto, int cantidad) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega!");
