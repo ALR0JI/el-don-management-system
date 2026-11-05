@@ -87,7 +87,7 @@ public class Ejecucion {
             }
         }
 
-        // ---- Cambios (solo si todo lo anterior ha ido bien) ----
+        // ---- Cambios (solo si tod0 lo anterior ha ido bien) ----
         Ejecucion e = new Ejecucion(id, mision, tipo, horaActual);
         e.probExito = calcularProbabilidadExito(mision, asignacion);
 
@@ -118,20 +118,6 @@ public class Ejecucion {
         }
         return (double) m / n * (100 - mision.getProbFracaso());
     }
-
-    public int getId() {return id; }
-    public Mision getMision() {return mision; }
-    public TEjecucion getTipo() {return tipo; }
-    public int getInicio() {return inicio; }
-    public int getFin() {return fin;}
-    public double getProbExito() {return probExito; }
-    public TResultado getResultado() { return resultado; }
-    public boolean isLeida() { return leida; }
-    public String getMaterialPerdido() { return materialPerdido; }
-    public List<Participacion> getParticipaciones() {
-        return Collections.unmodifiableList(participaciones);
-    }
-
     public boolean estaEnCurso() {
         return resultado == TResultado.EN_CURSO;
     }
@@ -201,7 +187,6 @@ public class Ejecucion {
         mision.actualizarEstado();
     }
 
-
     public int contarConsecuencias(TConsecuencia c) {
         int cuenta = 0;
         for (Participacion p : participaciones) {
@@ -233,15 +218,26 @@ public class Ejecucion {
         }
     }
 
-
     //POL: Estas dos funciones ya estaban en el esqueleto, no se si son para que funcione otro programa pero yo no las he usado para nada (tampoco estan en el funciones.md)
     public void setResultado(TResultado resultado) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega");
     }
 
-
     public void añadirParticipacion(Participacion participacion) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega");
+    }
+
+    public int getId() {return id; }
+    public Mision getMision() {return mision; }
+    public TEjecucion getTipo() {return tipo; }
+    public int getInicio() {return inicio; }
+    public int getFin() {return fin;}
+    public double getProbExito() {return probExito; }
+    public TResultado getResultado() { return resultado; }
+    public boolean isLeida() { return leida; }
+    public String getMaterialPerdido() { return materialPerdido; }
+    public List<Participacion> getParticipaciones() {
+        return Collections.unmodifiableList(participaciones);
     }
 
 }
