@@ -195,7 +195,10 @@ public class Secuaz {
         for (Map.Entry<Secuaz, Integer> entry : contadorCompaneros.entrySet()) {
             Secuaz companero = entry.getKey();
             Integer accesos  = entry.getValue();
-            if(accesos > maxColabos) complice = companero;
+            if(accesos > maxColabos){
+                complice = companero;
+                maxColabos = accesos;
+            }
         }
         return complice;
     }
