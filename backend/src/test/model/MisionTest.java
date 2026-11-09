@@ -233,7 +233,7 @@ public class MisionTest {
         misionPrincipal.registrarEjecucion(ejecucionMock);
 
         assertEquals(TEstado.COMPLETADA, misionPrincipal.getEstado());
-        //si se completa msiion principal m2 debe pasar a DISPONIBLE
+        //si se completa mision principal m2 debe pasar a DISPONIBLE
         assertEquals(TEstado.DISPONIBLE, m2.getEstado());
     }
 

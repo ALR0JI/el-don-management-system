@@ -75,8 +75,8 @@ public class ObjetoTest {
     public void testCalcularUnidadesPerdidasReutilizableFracasoDeterminista() {
         //se simulan 10 tiradas de nextDouble() 4 menores que 0.25 (se pierde el objeto) y 6 mayores que 0.25 (se salva el objeto)
         when(randomMock.nextDouble()).thenReturn(
-            0.1, 0.1, 0.1, 0.1,    // 4 perdidas (0.1 * 100 < 25)
-            0.5, 0.5, 0.5, 0.5, 0.5, 0.5            // 6 conservadas (0.5 * 100 >= 25)
+            0.1, 0.1, 0.1, 0.1,    
+            0.5, 0.5, 0.5, 0.5, 0.5, 0.5            
         );
 
         int perdidas = camion.calcularUnidadesPerdidas(10, false, randomMock);
