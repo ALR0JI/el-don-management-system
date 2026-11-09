@@ -389,7 +389,7 @@ public class Mision{
         return Collections.unmodifiableList(resultado);
     }
 
-    void registrarEjecucion(Ejecucion e) {
+    public void registrarEjecucion(Ejecucion e) {
         if (e == null) {
             throw new IllegalArgumentException("La ejecución no puede ser nula.");
         }

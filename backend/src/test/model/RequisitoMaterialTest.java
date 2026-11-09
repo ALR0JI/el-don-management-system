@@ -1,58 +1,65 @@
-package model;
+package test.model;
 
 import main.model.*;
 
-
 import org.junit.Before;
 import org.junit.Test;
-import java.util.HashMap;
-import java.util.Map;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
 
+@RunWith(MockitoJUnitRunner.class)
 public class RequisitoMaterialTest {
 
-    private Mision mision;
-    private Objeto camion;
+    @Mock
+    private Mision misionMock;
+
+    @Mock
+    private Objeto objetoMock;
+
     private RequisitoMaterial requisito;
 
     @Before
     public void setUp() {
-        Map<TRol, Integer> plantilla = new HashMap<>();
-        plantilla.put(TRol.CONDUCTOR, 1);
-        
-        mision = new Mision("Golpe Central", "Banco Central", 100000, 20.0, 12, plantilla);
-        camion = new Objeto("Camion blindado", "Vehiculo de escape", 50000, TUso.REUTILIZABLE, TCategoria.VEHICULO);
-        
-        requisito = new RequisitoMaterial(mision, camion, 2);
+        requisito = new RequisitoMaterial(misionMock, objetoMock, 2);
     }
 
     @Test
     public void testEstadoInicial() {
-        assertEquals(mision, requisito.getMision());
-        assertEquals(camion, requisito.getObjeto());
+        assertEquals(misionMock, requisito.getMision());
+        assertEquals(objetoMock, requisito.getObjeto());
         assertEquals(2, requisito.getCantidad());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testMisionNula() {
-        new RequisitoMaterial(null, camion, 1);
+        new RequisitoMaterial(null, objetoMock, 1);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testObjetoNulo() {
-        new RequisitoMaterial(mision, null, 1);
+        new RequisitoMaterial(misionMock, null, 1);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void testCantidadInvalidaConstructor() {
-        new RequisitoMaterial(mision, camion, 0);
+        new RequisitoMaterial(misionMock, objetoMock, 0);
     }
 
     @Test
     public void testSetCantidadValida() {
+        when(misionMock.tieneEjecuciones()).thenReturn(false);
         requisito.setCantidad(5);
         assertEquals(5, requisito.getCantidad());
+    }
+
+    @Test(expected = IllegalStateException.class)
+    public void testSetCantidadMisionYaEjecutada() {
+        when(misionMock.tieneEjecuciones()).thenReturn(true);
+        requisito.setCantidad(5);
     }
 
     @Test(expected = IllegalArgumentException.class)
@@ -62,18 +69,25 @@ public class RequisitoMaterialTest {
 
     @Test
     public void testEsSuficienteEnAlmacenYUnidadesFaltantes() {
-        // Stock inicial = 0, requerido = 2
+        //stock insuficiente (0 unidades)
+        when(objetoMock.estaDisponible(2)).thenReturn(false);
+        when(objetoMock.getStock()).thenReturn(0);
         assertFalse(requisito.esSuficienteEnAlmacen());
         assertEquals(2, requisito.unidadesFaltantes());
 
-        // Compramos 1 unidad
-        camion.añadir(1);
+        //stock a medias (1 unidad)
+        when(objetoMock.estaDisponible(2)).thenReturn(false);
+        when(objetoMock.getStock()).thenReturn(1);
         assertFalse(requisito.esSuficienteEnAlmacen());
         assertEquals(1, requisito.unidadesFaltantes());
 
-        // Compramos otra unidad (alcanza las 2)
-        camion.añadir(1);
+        //stock suficiente (2 unidades)
+        when(objetoMock.estaDisponible(2)).thenReturn(true);
+        when(objetoMock.getStock()).thenReturn(2);
         assertTrue(requisito.esSuficienteEnAlmacen());
         assertEquals(0, requisito.unidadesFaltantes());
+
+        verify(objetoMock, times(3)).estaDisponible(2);
+        verify(objetoMock, times(3)).getStock();
     }
 }

@@ -18,6 +18,7 @@ El proyecto se divide en un `backend` (lógica de dominio y datos en memoria) y 
 
 ```
 backend/
+  lib/
   src/
     main/
       model/            entidades, enumerados y clases de solo datos
