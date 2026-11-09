@@ -4,9 +4,10 @@ import org.junit.*;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
-import java.util.ArrayList;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+
 import java.util.Arrays;
-import java.util.List;
 
 import main.model.Ejecucion;
 import main.model.Participacion;
@@ -19,44 +20,50 @@ import main.model.TRol;
 public class SecuazTest {
 
     private Secuaz secuaz;
+    private Secuaz ana;
+    private Secuaz bea;
+
+    //Una ejecución simulada por cada resultado posible.
+    @Mock private Ejecucion ejecExito;
+    @Mock private Ejecucion ejecFracaso;
+    @Mock private Ejecucion ejecEnCurso;
+    @Mock private Ejecucion ejecEnCurso2; //Esta se usa para demostrar que no se cuentan las EnCurso
+
+
+    //Participaciones simuladas del secuaz, una en cada ejecución.
+    @Mock private Participacion partExito;
+    @Mock private Participacion partFracaso;
+    @Mock private Participacion partEnCurso;
+    @Mock private Participacion partEnCurso2; //Complementa a ejecEnCurso2
+
+    //Participaciones simuladas para el cómplice habitual.
+    @Mock private Participacion partAna;
+    @Mock private Participacion partBea;
 
     @Before
     public void setUp() {
+        MockitoAnnotations.initMocks(this);
+
         secuaz = new Secuaz(1, "Carlos", "El Rapido", TRol.CONDUCTOR);
-    }
+        ana = new Secuaz(2, "Ana", null, TRol.HACKER);
+        bea = new Secuaz(3, "Bea", null, TRol.ASALTO);
 
-    //Crea mock de una participación del secuaz indicado en una ejecución con el resultado indicado.
-    private Participacion participacionMock(Secuaz s, TResultado resultado) {
-        Ejecucion ejecucion = mock(Ejecucion.class);
-        when(ejecucion.getResultado()).thenReturn(resultado);
+        when(ejecExito.getResultado()).thenReturn(TResultado.EXITO);
+        when(ejecFracaso.getResultado()).thenReturn(TResultado.FRACASO);
+        when(ejecEnCurso.getResultado()).thenReturn(TResultado.EN_CURSO);
+        when(ejecEnCurso2.getResultado()).thenReturn(TResultado.EN_CURSO);
 
-        Participacion p = mock(Participacion.class);
-        when(p.getSecuaz()).thenReturn(s);
-        when(p.getEjecucion()).thenReturn(ejecucion);
-        return p;
-    }
+        when(partExito.getSecuaz()).thenReturn(secuaz);
+        when(partExito.getEjecucion()).thenReturn(ejecExito);
+        when(partFracaso.getSecuaz()).thenReturn(secuaz);
+        when(partFracaso.getEjecucion()).thenReturn(ejecFracaso);
+        when(partEnCurso.getSecuaz()).thenReturn(secuaz);
+        when(partEnCurso.getEjecucion()).thenReturn(ejecEnCurso);
+        when(partEnCurso2.getSecuaz()).thenReturn(secuaz);
+        when(partEnCurso2.getEjecucion()).thenReturn(ejecEnCurso2);
 
-    //Añade al secuaz una participación en una ejecución con el resultado indicado
-    //y los compañeros indicados.
-    private void añadirMisionCon(TResultado resultado, Secuaz... companeros) {
-        Ejecucion ejecucion = mock(Ejecucion.class);
-        when(ejecucion.getResultado()).thenReturn(resultado);
-
-        Participacion propia = mock(Participacion.class);
-        when(propia.getSecuaz()).thenReturn(secuaz);
-        when(propia.getEjecucion()).thenReturn(ejecucion);
-
-        List<Participacion> todas = new ArrayList<>();
-        todas.add(propia);
-        for (Secuaz c : companeros) {
-            Participacion pc = mock(Participacion.class);
-            when(pc.getSecuaz()).thenReturn(c);
-            when(pc.getEjecucion()).thenReturn(ejecucion);
-            todas.add(pc);
-        }
-        when(ejecucion.getParticipaciones()).thenReturn(todas);
-
-        secuaz.añadirParticipacion(propia);
+        when(partAna.getSecuaz()).thenReturn(ana);
+        when(partBea.getSecuaz()).thenReturn(bea);
     }
 
     //Para no repetir el proceso de detención
@@ -140,15 +147,27 @@ public class SecuazTest {
     //Comprueba que no se puede cambiar el nombre a nulo y que el nombre anterior se conserva.
     @Test
     public void testSetNombreNuloExcepcion() {
-        assertThrows(IllegalArgumentException.class, () -> secuaz.setNombre(null));
+        try {
+            secuaz.setNombre(null);
+            fail("Debería lanzar IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+        }
         assertEquals("Carlos", secuaz.getNombre());
     }
 
     //Comprueba que no se puede cambiar el nombre a uno vacío o solo con espacios.
     @Test
     public void testSetNombreVacioExcepcion() {
-        assertThrows(IllegalArgumentException.class, () -> secuaz.setNombre(""));
-        assertThrows(IllegalArgumentException.class, () -> secuaz.setNombre("   "));
+        try {
+            secuaz.setNombre("");
+            fail("Debería lanzar IllegalArgumentException con nombre vacío");
+        } catch (IllegalArgumentException e) {
+        }
+        try {
+            secuaz.setNombre("   ");
+            fail("Debería lanzar IllegalArgumentException con nombre solo con espacios");
+        } catch (IllegalArgumentException e) {
+        }
         assertEquals("Carlos", secuaz.getNombre());
     }
 
@@ -257,24 +276,31 @@ public class SecuazTest {
     public void testAcumularGananciaNegativaExcepcion() {
         secuaz.acumularGanancia(1000L);
 
-        assertThrows(IllegalArgumentException.class, () -> secuaz.acumularGanancia(-1L));
+        try {
+            secuaz.acumularGanancia(-1L);
+            fail("Debería lanzar IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+        }
         assertEquals(1000L, secuaz.getDineroAcumulado());
     }
 
     //Comprueba que se puede añadir una participación correctamente.
     @Test
     public void testAñadirParticipacion() {
-        Participacion p = participacionMock(secuaz, TResultado.EXITO);
-        secuaz.añadirParticipacion(p);
+        secuaz.añadirParticipacion(partExito);
 
         assertEquals(1, secuaz.getParticipaciones().size());
-        assertSame(p, secuaz.getParticipaciones().get(0));
+        assertSame(partExito, secuaz.getParticipaciones().get(0));
     }
 
     //Comprueba que no se puede añadir una participación nula.
     @Test
     public void testAñadirParticipacionNulaExcepcion() {
-        assertThrows(IllegalArgumentException.class, () -> secuaz.añadirParticipacion(null));
+        try {
+            secuaz.añadirParticipacion(null);
+            fail("Debería lanzar IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+        }
         assertTrue(secuaz.getParticipaciones().isEmpty());
     }
 
@@ -293,9 +319,9 @@ public class SecuazTest {
     //Comprueba que solo cuentan las misiones terminadas, no las que están en curso.
     @Test
     public void testNumMisionesIgnoraEnCurso() {
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.EXITO));
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.FRACASO));
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.EN_CURSO));
+        secuaz.añadirParticipacion(partExito);
+        secuaz.añadirParticipacion(partFracaso);
+        secuaz.añadirParticipacion(partEnCurso);
 
         assertEquals(2, secuaz.numMisiones());
     }
@@ -303,14 +329,11 @@ public class SecuazTest {
     //Comprueba que la hoja de servicios solo incluye las participaciones terminadas.
     @Test
     public void testHojaDeServiciosIgnoraEnCurso() {
-        Participacion exito = participacionMock(secuaz, TResultado.EXITO);
-        Participacion enCurso = participacionMock(secuaz, TResultado.EN_CURSO);
-        Participacion fracaso = participacionMock(secuaz, TResultado.FRACASO);
-        secuaz.añadirParticipacion(exito);
-        secuaz.añadirParticipacion(enCurso);
-        secuaz.añadirParticipacion(fracaso);
+        secuaz.añadirParticipacion(partExito);
+        secuaz.añadirParticipacion(partEnCurso);
+        secuaz.añadirParticipacion(partFracaso);
 
-        assertEquals(Arrays.asList(exito, fracaso), secuaz.hojaDeServicios());
+        assertEquals(Arrays.asList(partExito, partFracaso), secuaz.hojaDeServicios());
     }
 
     //Comprueba que sin misiones ni dinero la fianza es la fianza base de su especialidad.
@@ -323,9 +346,9 @@ public class SecuazTest {
     //se aplica correctamente.
     @Test
     public void testCalcularFianzaConMisionesYDinero() {
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.EXITO));
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.FRACASO));
-        secuaz.añadirParticipacion(participacionMock(secuaz, TResultado.EN_CURSO)); // no cuenta
+        secuaz.añadirParticipacion(partExito);
+        secuaz.añadirParticipacion(partFracaso);
+        secuaz.añadirParticipacion(partEnCurso); //no cuenta
         secuaz.acumularGanancia(5000L);
 
         long esperado = TRol.CONDUCTOR.getFianzaBase() + 100L * 2 + 500L;
@@ -378,8 +401,11 @@ public class SecuazTest {
     //Comprueba que no se puede procesar una consecuencia si el secuaz no está ocupado.
     @Test
     public void testProcesarConsecuenciaSinOcuparExcepcion() {
-        assertThrows(IllegalStateException.class,
-                () -> secuaz.procesarConsecuencia(TConsecuencia.NINGUNA, 10));
+        try {
+            secuaz.procesarConsecuencia(TConsecuencia.NINGUNA, 10);
+            fail("Debería lanzar IllegalStateException");
+        } catch (IllegalStateException e) {
+        }
         assertEquals(TEstadoSec.LIBRE, secuaz.getEstado());
     }
 
@@ -388,7 +414,11 @@ public class SecuazTest {
     public void testProcesarConsecuenciaNulaExcepcion() {
         secuaz.ocupar();
 
-        assertThrows(IllegalArgumentException.class, () -> secuaz.procesarConsecuencia(null, 10));
+        try {
+            secuaz.procesarConsecuencia(null, 10);
+            fail("Debería lanzar IllegalArgumentException");
+        } catch (IllegalArgumentException e) {
+        }
         assertEquals(TEstadoSec.OCUPADO, secuaz.getEstado());
     }
 
@@ -482,7 +512,11 @@ public class SecuazTest {
     //Comprueba que no se puede liberar a un secuaz que no está detenido.
     @Test
     public void testLiberarNoDetenidoExcepcion() {
-        assertThrows(IllegalStateException.class, () -> secuaz.liberar());
+        try {
+            secuaz.liberar();
+            fail("Debería lanzar IllegalStateException");
+        } catch (IllegalStateException e) {
+        }
         assertEquals(TEstadoSec.LIBRE, secuaz.getEstado());
     }
 
@@ -492,7 +526,11 @@ public class SecuazTest {
         secuaz.ocupar();
         secuaz.procesarConsecuencia(TConsecuencia.MUERTO, 10);
 
-        assertThrows(IllegalStateException.class, () -> secuaz.liberar());
+        try {
+            secuaz.liberar();
+            fail("Debería lanzar IllegalStateException");
+        } catch (IllegalStateException e) {
+        }
         assertEquals(TEstadoSec.MUERTO, secuaz.getEstado());
     }
 
@@ -503,13 +541,15 @@ public class SecuazTest {
     }
 
     //Comprueba que devuelve el compañero con el que más misiones terminadas ha compartido.
+    //Ana coincide en 2 misiones y Bea en 1.
     @Test
     public void testCompliceHabitual() {
-        Secuaz ana = new Secuaz(2, "Ana", null, TRol.HACKER);
-        Secuaz bea = new Secuaz(3, "Bea", null, TRol.ASALTO);
-
-        añadirMisionCon(TResultado.EXITO, ana);
-        añadirMisionCon(TResultado.FRACASO, ana, bea);
+        //La participacion que fue un exito fue con Ana
+        when(ejecExito.getParticipaciones()).thenReturn(Arrays.asList(partExito, partAna));
+        //La participacion que fue un fracaso fue con ambas
+        when(ejecFracaso.getParticipaciones()).thenReturn(Arrays.asList(partFracaso, partAna, partBea));
+        secuaz.añadirParticipacion(partExito);
+        secuaz.añadirParticipacion(partFracaso);
 
         assertSame(ana, secuaz.obtenerCompliceHabitual());
     }
@@ -517,24 +557,23 @@ public class SecuazTest {
     //Comprueba que las misiones en curso no cuentan para el cómplice habitual.
     @Test
     public void testCompliceHabitualIgnoraEnCurso() {
-        Secuaz ana = new Secuaz(2, "Ana", null, TRol.HACKER);
-        Secuaz bea = new Secuaz(3, "Bea", null, TRol.ASALTO);
-
-        añadirMisionCon(TResultado.EXITO, ana);
-        añadirMisionCon(TResultado.EN_CURSO, bea);
-        añadirMisionCon(TResultado.EN_CURSO, bea);
+        when(ejecEnCurso.getParticipaciones()).thenReturn(Arrays.asList(partEnCurso, partBea));
+        when(ejecEnCurso2.getParticipaciones()).thenReturn(Arrays.asList(partEnCurso2, partBea));
+        when(ejecExito.getParticipaciones()).thenReturn(Arrays.asList(partExito, partAna));
+        secuaz.añadirParticipacion(partEnCurso);
+        secuaz.añadirParticipacion(partEnCurso2);
+        secuaz.añadirParticipacion(partExito);
 
         assertSame(ana, secuaz.obtenerCompliceHabitual());
     }
 
-    //Comprueba que, ante un empate, devuelve el compañero que aparece antes en la lista.
+    //Comprueba que ante un empate devuelve el compañero que aparece antes en la lista.
     @Test
     public void testCompliceHabitualEmpate() {
-        Secuaz ana = new Secuaz(2, "Ana", null, TRol.HACKER);
-        Secuaz bea = new Secuaz(3, "Bea", null, TRol.ASALTO);
-
-        añadirMisionCon(TResultado.EXITO, ana);
-        añadirMisionCon(TResultado.FRACASO, bea);
+        when(ejecExito.getParticipaciones()).thenReturn(Arrays.asList(partExito, partAna));
+        when(ejecFracaso.getParticipaciones()).thenReturn(Arrays.asList(partFracaso, partBea));
+        secuaz.añadirParticipacion(partExito);
+        secuaz.añadirParticipacion(partFracaso);
 
         assertSame(ana, secuaz.obtenerCompliceHabitual());
     }
