@@ -29,7 +29,7 @@ public class SecuacesUC {
     }
 
     //Devuelve los objetos Candidato en oferta, se usa internamente.
-    private List<Candidato> candidatosEnOferta(){
+    private static List<Candidato> candidatosEnOferta(){
         CtrlCandidato ctrlCandidato = FactoriaCtrl.getInstance().getCtrlCandidato();
         List<Candidato> candidatos = ctrlCandidato.all();
         List<Candidato> enOferta = new ArrayList<>();
@@ -181,7 +181,7 @@ public class SecuacesUC {
     }
 
     //Cada vez que se llame a esta funcion se pone en oferta a nuevos candidatos
-    public void renovarOferta(){
+    public static void renovarOferta(){
         List<Candidato> candidatosOferta = candidatosEnOferta();
         for(Candidato c : candidatosOferta){
             c.retirarDeOferta();;
@@ -192,7 +192,7 @@ public class SecuacesUC {
         for(Candidato c :candidatos){
             if(c.esElegible()) candidatosElegibles.add(c);
         }
-        Collections.shuffle(candidatosElegibles, Azar.get());
+        Collections.shuffle(candidatosElegibles, Azar.getInstance());
         int cantidad = Math.min(MAX_EN_OFERTA, candidatosElegibles.size());
 
         for (int i = 0; i < cantidad; i++) {
