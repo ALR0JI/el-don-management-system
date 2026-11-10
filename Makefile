@@ -1,14 +1,15 @@
 BACKEND_SRC  := $(shell find backend/src/main -name "*.java")
 FRONTEND_SRC := $(shell find frontend/src/main -name "*.java")
 TEST_SRC     := $(shell find backend/src/test -name "*.java")
-# Clases de test: ficheros *Test.java que contienen algún @Test.
-# El nombre se saca de su línea "package" (p. ej. test.model.CandidatoTest).
+
 TEST_CLASSES := $(shell for f in $$(grep -rl "@Test" backend/src/test --include="*Test.java"); do \
                   pkg=$$(sed -n 's/^package \([^;]*\);.*/\1/p' $$f); \
                   echo $${pkg:+$$pkg.}$$(basename $$f .java); done)
 TEST_CP      := out/backend:out/test:backend/lib/*
+DRIVER_SRC   := $(shell find backend/src/drivers -name "*.java")
+DRIVER_CP    := out/backend:out/drivers
 
-.PHONY: compile run clean compile-test test
+.PHONY: compile run clean compile-test test compile-drivers driver
 
 compile:
 	mkdir -p out/backend out/frontend
@@ -22,10 +23,18 @@ compile-test: compile
 	mkdir -p out/test
 	javac -encoding UTF-8 -cp "$(TEST_CP)" -d out/test $(TEST_SRC)
 
-# make test                          -> ejecuta todos los tests
-# make test T=test.model.CandidatoTest -> ejecuta solo esa clase (o varias separadas por espacios)
+
 test: compile-test
 	java -cp "$(TEST_CP)" org.junit.runner.JUnitCore $(if $(T),$(T),$(TEST_CLASSES))
+
+compile-drivers: compile
+	mkdir -p out/drivers
+	javac -encoding UTF-8 -cp out/backend -d out/drivers $(DRIVER_SRC)
+
+# make driver D=DriverSecuacesUC
+# make driver D=DriverSecuacesUC IN=ruta/entrada.txt
+driver: compile-drivers
+	java -cp "$(DRIVER_CP)" drivers.$(D) $(if $(IN),< $(IN))
 
 clean:
 	rm -rf out
