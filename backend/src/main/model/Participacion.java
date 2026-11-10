@@ -50,8 +50,8 @@ public class Participacion {
 
     public long liquidarCobro(long botin) {
         if (ejecucion.getResultado() != TResultado.EXITO) throw new IllegalStateException("La misión debe haber acabado con exito");
-        double porcentajeComision = rolDesempenado.getComision();
-        cobrado = (long) ((botin * rolDesempenado.getComision()) / 100);
+        double porcentajeComision = secuaz.getEspecialidad().getComision();
+        cobrado = (long) ((botin * porcentajeComision) / 100);
         secuaz.acumularGanancia(cobrado);
         return cobrado;
 

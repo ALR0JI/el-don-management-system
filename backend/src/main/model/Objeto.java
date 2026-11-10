@@ -20,7 +20,7 @@ public class Objeto {
             throw new IllegalArgumentException("La descripción no puede ser nula ni estar vacía.");
         }
         if (precio <= 0) {
-            throw new IllegalArgumentException("El precio debe ser mayor que 0."); // RT35[cite: 4]
+            throw new IllegalArgumentException("El precio debe ser mayor que 0.");
         }
         if (uso == null) {
             throw new IllegalArgumentException("El uso del objeto no puede ser nulo.");
@@ -34,7 +34,7 @@ public class Objeto {
         this.precio = precio;
         this.uso = uso;
         this.categoria = categoria;
-        this.stock = 0; // Se empieza con stock 0
+        this.stock = 0; //se empieza con stock 0
     }
     
     //getters
@@ -63,21 +63,21 @@ public class Objeto {
 
     //funciones
     public boolean estaDisponible(int cantidad) {
-        return stock >= cantidad; // RT37[cite: 4]
+        return stock >= cantidad; 
     }
 
-    //aumenta el stock
+    //aumenta el stock en "cantidad"
     public void añadir(int cantidad) {
         if (cantidad <= 0) {
             throw new IllegalArgumentException("La cantidad a añadir debe ser mayor que 0.");
         }
-        this.stock += cantidad; // RT10, RT38[cite: 4]
+        this.stock += cantidad; 
     }
 
-    //reduce el stock
+    //reduce el stock en "cantidad"
     public boolean descontar(int cantidad) {
         if (!estaDisponible(cantidad)) {
-            return false; // RT37[cite: 4]
+            return false;
         }
         this.stock -= cantidad;
         return true;

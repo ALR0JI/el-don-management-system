@@ -2,7 +2,6 @@ package main.model;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -63,6 +62,7 @@ public class Mision{
         this.ubicacion = ubicacion;
         this.botin = botin; 
         this.probFracaso = probFracaso;
+
         if(duracion != null){
             this.duracion = duracion;
         } else{
@@ -161,7 +161,7 @@ public class Mision{
         return !ejecuciones.isEmpty();
     }
 
-    //consultas no de atributos
+    //consultas de no atributos
     public int getNumIntentos(){
         int count = 0;
         for (Ejecucion e : ejecuciones) {
@@ -218,7 +218,7 @@ public class Mision{
             if (exito) {
                 this.estado = TEstado.COMPLETADA;
                 for (Mision dep : dependientes) {
-                    dep.actualizarEstado();
+                    dep.actualizarEstado(); //se recalcula el estado de las dependientes
                 }
                 return;
             } else if (seHaEjecutado) {
@@ -250,7 +250,7 @@ public class Mision{
             throw new IllegalArgumentException("La misión " + m.getNombreClave() + " ya es un prerrequisito.");
         }
         if (m.dependeDe(this)) {
-            throw new IllegalArgumentException("No se puede añadir el prerrequisito porque se crearía un ciclo de dependencias."); // RT15[cite: 3]
+            throw new IllegalArgumentException("No se puede añadir el prerrequisito porque se crearía un ciclo de dependencias."); 
         }
 
         prerrequisitos.add(m);
@@ -291,7 +291,7 @@ public class Mision{
         }
 
         prerrequisitos.remove(m);
-        m.dependientes.remove(this); // Desvinculación de ambas listas
+        m.dependientes.remove(this); 
         actualizarEstado(); //se vuelve a calcular el estado
     }
 
@@ -353,7 +353,7 @@ public class Mision{
         }
 
         if (aEliminar == null) {
-            throw new IllegalArgumentException("El rol " + rol + " no forma parte de la plantilla de esta misión.");
+            throw new IllegalArgumentException("El rol " + rol + " no forma parte de la plantilla.");
         }
 
         plantillasRol.remove(aEliminar);

@@ -35,7 +35,6 @@ public class RequisitoMaterial {
         return cantidad;
     }
 
-    //FUNCIONES 
     //modifica la cantidad 
     public void setCantidad(int cantidad) {
         if (mision.tieneEjecuciones()) {
@@ -56,7 +55,7 @@ public class RequisitoMaterial {
     public int unidadesFaltantes(){
         int cant = cantidad - objeto.getStock();
         if(cant < 0){
-            return 0; //si ya hya mas stock q el necesario devuelve 0
+            return 0; //si ya hay mas stock q el necesario devuelve 0
         }
         else{
             return cant;
