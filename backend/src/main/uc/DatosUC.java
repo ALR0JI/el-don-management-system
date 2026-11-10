@@ -5,7 +5,6 @@ import main.ctrl.FactoriaCtrl;
 import main.ctrl.CtrlFichero;
 import main.ctrl.CtrlMision;
 import main.ctrl.CtrlSecuaz;
-import main.ctrl.CtrlCandidato;
 
 import java.util.*;
 
@@ -56,7 +55,7 @@ public class DatosUC {
 
             TRol rol;
             try {
-                rol = convertirRol(textoRol);
+                rol = StringToTRol(textoRol);
                 filas.add(new String[] {nombre, rol.name()});
             } catch (IllegalArgumentException e) {                      // Si hay una excepcion se recoge para meterla en avisos
                 avisos.add("Linea " + numLinea + ": rol invalido");
@@ -82,7 +81,7 @@ public class DatosUC {
                     throw new IllegalArgumentException("El nombre no puede estar vacio");
                 }
                 nombres.add(fila[0].trim());
-                roles.add(convertirRol(fila[1]));
+                roles.add(StringToTRol(fila[1]));
             } catch (IllegalArgumentException e) {
                 throw new IllegalArgumentException("Secuaz en posicion " + (i + 1) + ": " + e.getMessage());
             }
@@ -117,9 +116,9 @@ public class DatosUC {
             // Antes de devolver la fila se revisa que todos los parametros sean validos
             try {
                 String[] fila = separarMision(linea);
-                convertirBotin(fila[1]);
-                convertirPlantilla(fila[2]);
-                convertirProbabilidad(fila[3]);
+                StringToBotin(fila[1]);
+                StringToPlantilla(fila[2]);
+                StringToProbabilidad(fila[3]);
                 filas.add(fila);
             } catch (IllegalArgumentException e) {
                 avisos.add("Linea " + numLinea + ": " + e.getMessage());
@@ -152,10 +151,10 @@ public class DatosUC {
 
                 Mision mision = new Mision( nombre,
                                    null,
-                                            convertirBotin(fila[1]),
-                                            convertirProbabilidad(fila[3]),
+                                            StringToBotin(fila[1]),
+                                            StringToProbabilidad(fila[3]),
                                     null,
-                                            convertirPlantilla(fila[2]));
+                                            StringToPlantilla(fila[2]));
                 misiones.add(mision);
                 dependencias.put(nombre, convertirDependencias(fila[4]));
             } catch (IllegalArgumentException e) {
@@ -216,7 +215,7 @@ public class DatosUC {
      * capa de presentacion se acople con la de dominio
      */
 
-    private TRol convertirRol(String texto) {
+    private TRol StringToTRol(String texto) {
         try {
             // trim quita los espacios de los extremos y toUpperCase lo pasa a mayus
             return TRol.valueOf(texto.trim().toUpperCase(Locale.ROOT));
@@ -225,7 +224,7 @@ public class DatosUC {
         }
     }
 
-    private long convertirBotin (String texto){
+    private long StringToBotin(String texto){
         try {
             return Long.parseLong(texto.trim());
         } catch (NumberFormatException e) {
@@ -233,7 +232,7 @@ public class DatosUC {
         }
     }
 
-    private double convertirProbabilidad(String texto) {
+    private double StringToProbabilidad(String texto) {
         try {
             return Double.parseDouble(texto.trim());
         } catch (NumberFormatException e) {
@@ -241,7 +240,7 @@ public class DatosUC {
         }
     }
 
-    private Map<TRol, Integer> convertirPlantilla(String texto) {
+    private Map<TRol, Integer> StringToPlantilla(String texto) {
         // Limpieza del string
         String textoLimpio = texto.trim();
 
@@ -259,7 +258,7 @@ public class DatosUC {
         // Creacion de la plantilla
         Map<TRol, Integer> plantilla = new LinkedHashMap<>();
         for (int i = 0; i < palabras.length; i += 2) {
-            TRol rol = convertirRol(palabras[i]);
+            TRol rol = StringToTRol(palabras[i]);
 
             if (plantilla.containsKey(rol)) {
                 throw new IllegalArgumentException("el rol " + rol + " esta repetido en la plantilla");
