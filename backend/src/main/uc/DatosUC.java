@@ -16,14 +16,12 @@ public class DatosUC {
     private final CtrlFichero ctrlFichero;
     private final CtrlMision ctrlMision;
     private final CtrlSecuaz ctrlSecuaz;
-    private final CtrlCandidato ctrlCandidato;
 
     public DatosUC() {
         FactoriaCtrl factoria = FactoriaCtrl.getInstance();
         this.ctrlFichero = factoria.getCtrlFichero();
         this.ctrlMision = factoria.getCtrlMision();
         this.ctrlSecuaz = factoria.getCtrlSecuaz();
-        this.ctrlCandidato = factoria.getCtrlCandidato();
     }
 
     public List<String[]> leerSecuaces(String ruta, List<String> avisos) {
