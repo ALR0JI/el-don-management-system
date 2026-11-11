@@ -16,7 +16,7 @@ public class Reloj {
     }
 
     public void avanzar() {
-        throw new UnsupportedOperationException("Entrega 2");
+        hora++;
     }
 
     public static void reiniciar() {
