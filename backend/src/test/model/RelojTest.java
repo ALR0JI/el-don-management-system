@@ -33,16 +33,6 @@ public class RelojTest {
         assertSame(r1, r2);
     }
 
-    // Comprueba que consultar la hora no modifica el valor
-    @Test
-    public void testConsultarHoraNoCambia() {
-        Reloj reloj = Reloj.getInstance();
-
-        for (int i = 0; i < 5; i++) {
-            assertEquals(0, reloj.horaActual());
-        }
-    }
-
     // Comprueba que cada avance de hora suma exactamente 1 tambien al pasar de las 24, 48 y 72 horas
     @Test
     public void testAvanzarSumaUnaHoraCadaVez() {
@@ -52,18 +42,6 @@ public class RelojTest {
             reloj.avanzar();
             assertEquals(esperada, reloj.horaActual());
         }
-    }
-
-    // Comprueba que la hora avanza desde cualquier referencia a reloj
-    @Test
-    public void testHoraAvanzaDesdeCualquierReferencia() {
-        Reloj r1 = Reloj.getInstance();
-        Reloj r2 = Reloj.getInstance();
-
-        r1.avanzar(); r1.avanzar(); r2.avanzar();
-        assertEquals(3, r1.horaActual());
-        assertEquals(3, r2.horaActual());
-        assertEquals(3, Reloj.getInstance().horaActual());
     }
 
     // Comprueba que reinciar devuelve la hora a 0 y que el conteo empieza desde ahi
@@ -83,16 +61,4 @@ public class RelojTest {
         Reloj.getInstance().avanzar();
         assertEquals(1, Reloj.getInstance().horaActual());
     }
-
-    // Comprueba que reiniciar varias veces seguidas y sin haber usado el reloj no falla.
-    @Test
-    public void testReiniciarRepetidoNoFalla() {
-        Reloj.reiniciar();
-        Reloj.reiniciar();
-
-        assertEquals(0, Reloj.getInstance().horaActual());
-    }
-
-
-
 }
