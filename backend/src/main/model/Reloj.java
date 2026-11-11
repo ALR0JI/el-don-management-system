@@ -1,5 +1,9 @@
 package main.model;
 
+/**
+ * @author Alejandro
+ */
+
 public class Reloj {
     private static Reloj instance;
     private int hora = 0;
