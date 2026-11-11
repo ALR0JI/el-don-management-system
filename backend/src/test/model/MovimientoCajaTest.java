@@ -34,7 +34,7 @@ public class MovimientoCajaTest {
     // Avanza la hora hasta el parametro especificado
     private static void fijarHora(int hora) {
         Reloj reloj = Reloj.getInstance();
-        while (reloj.horaActual() < hora) {
+        for (int i = 0; i < hora; i++) {
             reloj.avanzar();
         }
     }
