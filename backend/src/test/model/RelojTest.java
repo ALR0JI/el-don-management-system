@@ -23,7 +23,7 @@ public class RelojTest {
         assertEquals(0, Reloj.getInstance().horaActual());
     }
 
-    // Comprueba que getInstance devuelva siempre la misma instancia y, por lo tanto, sea un singleton
+    // Comprueba que getInstance devuelva siempre la misma instancia (singleton)
     @Test
     public void testSiempreMismaInstancia() {
         Reloj r1 = Reloj.getInstance();
