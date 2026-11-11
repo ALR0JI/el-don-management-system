@@ -2,6 +2,7 @@ package test.model;
 
 import main.model.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,6 +15,11 @@ import static org.junit.Assert.*;
 public class RelojTest {
     @Before
     public void setUp() {
+        Reloj.reiniciar();
+    }
+
+    @After
+    public void tearDown() {
         Reloj.reiniciar();
     }
 
