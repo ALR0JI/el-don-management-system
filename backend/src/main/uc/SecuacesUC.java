@@ -184,7 +184,7 @@ public class SecuacesUC {
     public static void renovarOferta(){
         List<Candidato> candidatosOferta = candidatosEnOferta();
         for(Candidato c : candidatosOferta){
-            c.retirarDeOferta();;
+            c.retirarDeOferta();
         }
         List<Candidato> candidatosElegibles = new ArrayList<>();
         CtrlCandidato ctrlCandidato = FactoriaCtrl.getInstance().getCtrlCandidato();
