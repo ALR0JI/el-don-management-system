@@ -1,7 +1,6 @@
 package main.model;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
@@ -102,23 +101,23 @@ public class Mision{
     }
 
     public List<Mision> getPrerrequisitos(){
-        return Collections.unmodifiableList(prerrequisitos);
+        return prerrequisitos;
     }
 
     public List<Mision> getDependientes(){
-        return Collections.unmodifiableList(dependientes);
+        return dependientes;
     }
 
     public List<PlantillaRol> getPlantillasRol(){
-        return Collections.unmodifiableList(plantillasRol);
+        return plantillasRol;
     }
 
     public List<RequisitoMaterial> getRequisitosMateriales(){
-        return Collections.unmodifiableList(requisitosMateriales);
+        return requisitosMateriales;
     }
 
     public List<Ejecucion> getEjecuciones(){
-        return Collections.unmodifiableList(ejecuciones);
+        return ejecuciones;
     }
 
     //setters
@@ -367,7 +366,7 @@ public class Mision{
         Set<Mision> visitados = new HashSet<>();
         List<Mision> resultado = new ArrayList<>();
         obtenerCadenaPrerrequisitosRec(this, visitados, resultado);
-        return Collections.unmodifiableList(resultado);
+        return resultado;
     }
 
     private void obtenerCadenaPrerrequisitosRec(Mision actual, Set<Mision> visitados, List<Mision> resultado) {
@@ -386,7 +385,7 @@ public class Mision{
                 resultado.add(dep);
             }
         }
-        return Collections.unmodifiableList(resultado);
+        return resultado;
     }
 
     public void registrarEjecucion(Ejecucion e) {

@@ -3,7 +3,6 @@ package main.uc;
 import main.model.Mision;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,7 +18,7 @@ public class Planificador {
         }
 
         Map<Mision, Integer> gradoEntrada = new HashMap<>();
-        Map<Mision, List<Mision>> adjacencia = new HashMap<>();
+        Map<Mision, List<Mision>> adjacencia = new HashMap<>(); //mapa de cada mision y las que dependen de ella
 
         //inicializar gradoEntrada y adjacencia para todas las misiones
         for (Mision m : misiones) {
@@ -70,6 +69,6 @@ public class Planificador {
             throw new IllegalStateException("No se puede generar el plan ordenado porque existe una dependencia circular.");
         }
 
-        return Collections.unmodifiableList(planOrdenado);
+        return planOrdenado;
     }
 }
