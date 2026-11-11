@@ -4,7 +4,6 @@ import main.model.*;
 import main.ctrl.*;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -24,22 +23,91 @@ public class MisionesUC{
         this.ctrlObjeto = ctrlObjeto;
     }
 
-    //crear nueva mision
-    public Mision crearMision(String nombreClave, String ubicacion, long botin, double probFracaso,
-                              Integer duracion, Map<TRol, Integer> plantilla,
-                              List<String> prerrequisitos, Map<String, Integer> material) {
+    //devuelve la misión con el nombreClave indicado (uso interno)
+    private Mision obtenerMision(String nombreClave) {
+        Mision m = ctrlMision.get(nombreClave);
+        if (m == null) {
+            throw new IllegalArgumentException("No existe ninguna misión con el nombre clave: " + nombreClave);
+        }
+        return m;
+    }
+
+    //convierte un string de un rol en TRol 
+    private TRol convertirRol(String rolStr) {
+        if (rolStr == null) {
+            throw new IllegalArgumentException("El rol no puede ser nulo");
+        }
+        try {
+            return TRol.valueOf(rolStr);
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("No existe el rol: " + rolStr);
+        }
+    }
+
+    //convierte un string de un estado en TEstado
+    private TEstado convertirEstado(String estadoStr) {
+        if (estadoStr == null) {
+            throw new IllegalArgumentException("El estado no puede ser nulo");
+        }
+        try {
+            return TEstado.valueOf(estadoStr);
+        } catch (IllegalArgumentException e) {
+            throw new IllegalArgumentException("No existe el estado: " + estadoStr);
+        }
+    }
+
+    //convierte un objeto Mision en una strings de strings: {nombreClave, ubicacion, botin, probFracaso, duracion, estado}
+    private String[] stringsMision(Mision m) {
+        String[] resultado = new String[6];
+        resultado[0] = m.getNombreClave();
+        
+        if(m.getUbicacion() != null){
+            resultado[1] = m.getUbicacion();
+        }else{
+            resultado[1] = "";
+        }
+
+        resultado[2] = String.valueOf(m.getBotin());
+
+        resultado[3] = String.valueOf(m.getProbFracaso());
+
+        if(String.valueOf(m.getDuracion()) != null){
+            resultado[4] = String.valueOf(m.getDuracion());
+        }else{
+            resultado[4] = "";
+        }
+
+        if(m.getEstado() != null){
+            resultado[5] = m.getEstado().name();
+        }else{
+            resultado[5] = "";
+        }
+
+        return resultado;
+    }
+
+    // Crear nueva misión (la plantilla entra como Map<String, Integer> para no usar TRol fuera)
+    public void crearMision(String nombreClave, String ubicacion, long botin, double probFracaso,
+                            Integer duracion, Map<String, Integer> plantilla,
+                            List<String> prerrequisitos, Map<String, Integer> material) {
 
         if (ctrlMision.exists(nombreClave)) {
             throw new IllegalArgumentException("Ya existe una misión con el nombre clave: " + nombreClave); 
         }
 
+        //pasar el mapa de srtings a TRol
+        Map<TRol, Integer> plantillaRoles = new HashMap<>();
+        if (plantilla != null) {
+            for (Map.Entry<String, Integer> entry : plantilla.entrySet()) {
+                TRol rol = convertirRol(entry.getKey());
+                plantillaRoles.put(rol, entry.getValue());
+            }
+        }
+
         List<Mision> misionesPrerrequisito = new ArrayList<>();
         if (prerrequisitos != null) {
             for (String prereqNombre : prerrequisitos) {
-                Mision prereq = ctrlMision.get(prereqNombre);
-                if (prereq == null) {
-                    throw new IllegalArgumentException("No existe el prerrequisito: " + prereqNombre); 
-                }
+                Mision prereq = obtenerMision(prereqNombre);
                 misionesPrerrequisito.add(prereq);
             }
         }
@@ -55,7 +123,7 @@ public class MisionesUC{
             }
         }
 
-        Mision mision = new Mision(nombreClave, ubicacion, botin, probFracaso, duracion, plantilla);
+        Mision mision = new Mision(nombreClave, ubicacion, botin, probFracaso, duracion, plantillaRoles);
 
         for (Mision prereq : misionesPrerrequisito) {
             mision.añadirPrerrequisito(prereq); 
@@ -65,13 +133,11 @@ public class MisionesUC{
             mision.añadirRequisitoMaterial(entry.getKey(), entry.getValue()); 
         }
 
-        
         ctrlMision.insertar(mision); 
-        return mision;
     }
 
     public void modificarMision(String nombreClave, String ubicacion, long botin, double probFracaso, int duracion) {
-        Mision mision = consultarMision(nombreClave);
+        Mision mision = obtenerMision(nombreClave);
         mision.setUbicacion(ubicacion); 
         mision.setBotin(botin); 
         mision.setProbFracaso(probFracaso); 
@@ -79,25 +145,26 @@ public class MisionesUC{
     }
     
     public void eliminarMision(String nombreClave) {
-        Mision mision = consultarMision(nombreClave);
+        Mision mision = obtenerMision(nombreClave);
         mision.desvincular(); //lanza excepción si tiene dependientes o ejecuciones 
         ctrlMision.eliminar(nombreClave); 
     }
 
     public void añadirPrerrequisito(String nombreClave, String nombrePrerrequisito) {
-        Mision mision = consultarMision(nombreClave);
-        Mision prereq = consultarMision(nombrePrerrequisito);
+        Mision mision = obtenerMision(nombreClave);
+        Mision prereq = obtenerMision(nombrePrerrequisito);
         mision.añadirPrerrequisito(prereq); 
     }
 
     public void eliminarPrerrequisito(String nombreClave, String nombrePrerrequisito) {
-        Mision mision = consultarMision(nombreClave);
-        Mision prereq = consultarMision(nombrePrerrequisito);
+        Mision mision = obtenerMision(nombreClave);
+        Mision prereq = obtenerMision(nombrePrerrequisito);
         mision.eliminarPrerrequisito(prereq); 
     }
 
-    public void definirRolPlantilla(String nombreClave, TRol rol, int cantidad) {
-        Mision mision = consultarMision(nombreClave);
+    public void definirRolPlantilla(String nombreClave, String rolStr, int cantidad) {
+        Mision mision = obtenerMision(nombreClave);
+        TRol rol = convertirRol(rolStr);
         boolean encontrado = false;
         for (PlantillaRol p : mision.getPlantillasRol()) {
             if (p.getRol() == rol) {
@@ -111,13 +178,14 @@ public class MisionesUC{
         }
     }
 
-    public void eliminarRolPlantilla(String nombreClave, TRol rol) {
-        Mision mision = consultarMision(nombreClave);
+    public void eliminarRolPlantilla(String nombreClave, String rolStr) {
+        Mision mision = obtenerMision(nombreClave);
+        TRol rol = convertirRol(rolStr);
         mision.eliminarPlantillaRol(rol); 
     }
 
     public void definirMaterial(String nombreClave, String nombreObjeto, int cantidad) {
-        Mision mision = consultarMision(nombreClave);
+        Mision mision = obtenerMision(nombreClave);
         Objeto objeto = ctrlObjeto.get(nombreObjeto);
         if (objeto == null) {
             throw new IllegalArgumentException("No existe el objeto: " + nombreObjeto);
@@ -137,7 +205,7 @@ public class MisionesUC{
     }
 
     public void eliminarMaterial(String nombreClave, String nombreObjeto) {
-        Mision mision = consultarMision(nombreClave);
+        Mision mision = obtenerMision(nombreClave);
         Objeto objeto = ctrlObjeto.get(nombreObjeto);
         if (objeto == null) {
             throw new IllegalArgumentException("No existe el objeto: " + nombreObjeto);
@@ -145,28 +213,35 @@ public class MisionesUC{
         mision.eliminarRequisitoMaterial(objeto); 
     }
 
-    public Mision consultarMision(String nombreClave) {
-        Mision mision = ctrlMision.get(nombreClave);
-        if (mision == null) {
-            throw new IllegalArgumentException("No existe ninguna misión con el nombre clave: " + nombreClave); 
-        }
-        return mision;
+    public String[] consultarMision(String nombreClave) {
+        Mision mision = obtenerMision(nombreClave);
+        return stringsMision(mision);
     }
 
-    //devuelve las misiones ordenadoas por botin
-    public List<Mision> listarMisiones(TEstado estado) {
+    //devuelve las misiones ordenadoas por estado y botin
+    public List<String[]> listarMisiones(String estadoStr) {
+        TEstado estadoFiltro = null;
+        if (estadoStr != null && !estadoStr.trim().isEmpty()) {
+            estadoFiltro = convertirEstado(estadoStr);
+        }
+
         List<Mision> todas = ctrlMision.all();
         List<Mision> resultado = new ArrayList<>();
 
         for (Mision m : todas) {
-            if (estado == null || m.getEstado() == estado) {
+            if (estadoFiltro == null || m.getEstado() == estadoFiltro) {
                 resultado.add(m);
             }
         }
 
-        // Ordenar por botín de mayor a menor (a igual botín, mantiene el orden de inserción)
+        //ordenar por botín de mayor a menor
         resultado.sort((m1, m2) -> Long.compare(m2.getBotin(), m1.getBotin()));
-        return Collections.unmodifiableList(resultado);
+
+        List<String[]> filas = new ArrayList<>();
+        for (Mision m : resultado) {
+            filas.add(stringsMision(m));
+        }
+        return filas;
     }
 
 }
