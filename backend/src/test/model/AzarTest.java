@@ -2,6 +2,7 @@ package test.model;
 
 import main.model.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -22,6 +23,11 @@ public class AzarTest {
     @Before
     public void setUp() {
         Azar.setSemilla(SEMILLA);
+    }
+
+    @After
+    public void tearDown() {
+        Azar.reiniciar();
     }
 
     // Extrae n numeros del Random recibido

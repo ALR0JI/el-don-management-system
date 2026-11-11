@@ -2,6 +2,7 @@ package test.model;
 
 import main.model.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,13 +18,18 @@ public class RelojTest {
         Reloj.reiniciar();
     }
 
+    @After
+    public void tearDown() {
+        Reloj.reiniciar();
+    }
+
     // Comprueba que el reloj incialmente tiene el valor de hora como 0
     @Test
     public void testHoraIncialEsCero() {
         assertEquals(0, Reloj.getInstance().horaActual());
     }
 
-    // Comprueba que getInstance devuelva siempre la misma instancia y, por lo tanto, sea un singleton
+    // Comprueba que getInstance devuelva siempre la misma instancia (singleton)
     @Test
     public void testSiempreMismaInstancia() {
         Reloj r1 = Reloj.getInstance();
