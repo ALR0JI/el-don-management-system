@@ -13,6 +13,6 @@ public class Azar {
     }
 
     public static void setSemilla(long semilla) {
-        throw new UnsupportedOperationException("Entrega 2");
+        instance = new Random(semilla);
     }
 }
