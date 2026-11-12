@@ -8,6 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * @author Adrià
+ */
 public class MisionesUC{
     private final CtrlMision ctrlMision;
     private final CtrlObjeto ctrlObjeto;
@@ -136,12 +139,16 @@ public class MisionesUC{
         ctrlMision.insertar(mision); 
     }
 
-    public void modificarMision(String nombreClave, String ubicacion, long botin, double probFracaso, int duracion) {
+    public void modificarMision(String nombreClave, String ubicacion, long botin, double probFracaso, Integer duracion) {
         Mision mision = obtenerMision(nombreClave);
         mision.setUbicacion(ubicacion); 
         mision.setBotin(botin); 
         mision.setProbFracaso(probFracaso); 
-        mision.setDuracion(duracion); 
+        if(duracion != null){
+            mision.setDuracion(duracion); 
+        } else{
+            mision.setDuracion(12);
+        }
     }
     
     public void eliminarMision(String nombreClave) {

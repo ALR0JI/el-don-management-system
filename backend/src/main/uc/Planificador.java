@@ -8,6 +8,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
+/**
+ * @author Adrià
+ */
 public class Planificador {
 
     //se aplica el algoritmo de Khant para devolver una secuencia valida de ejeucion que devuelva 
@@ -38,7 +41,7 @@ public class Planificador {
 
         //priority queue que ordena las misiones sin dependencias de mayor a menor botin
         PriorityQueue<Mision> libres = new PriorityQueue<>(
-            (m1, m2) -> Long.compare(m2.getBotin(), m1.getBotin()) //le dice a la pq como debe ordenar
+            (m1, m2) -> Long.compare(m2.getBotin(), m1.getBotin()) //como debe ordenar la pq
         );
 
         for (Map.Entry<Mision, Integer> entry : gradoEntrada.entrySet()) {

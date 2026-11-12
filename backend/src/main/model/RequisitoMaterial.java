@@ -1,5 +1,9 @@
 package main.model;
 
+
+/**
+ * @author Adrià
+ */
 public class RequisitoMaterial {
     private final Mision mision;
     private final Objeto objeto;

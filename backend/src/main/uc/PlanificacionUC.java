@@ -6,6 +6,9 @@ import main.ctrl.CtrlMision;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Adrià
+ */
 public class PlanificacionUC {
 
     private final Planificador planificador;

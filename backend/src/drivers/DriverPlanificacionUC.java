@@ -6,6 +6,9 @@ import main.ctrl.FactoriaCtrl;
 import main.uc.PlanificacionUC;
 import main.uc.Planificador;
 
+/**
+ * @author Adrià 
+*/
 public class DriverPlanificacionUC {
 
     private static final inout io = new inout();

@@ -2,6 +2,10 @@ package main.model;
 
 import java.util.*;
 
+/**
+ * @author Adrià
+ */
+
 public class Mision{
     public static final int DURACION_POR_DEFECTO = 12;
 
@@ -138,12 +142,16 @@ public class Mision{
         this.probFracaso = probFracaso;
     }
 
-    public void setDuracion(int duracion){
+    public void setDuracion(Integer duracion){
         comprobarEditable();
-        if (duracion <= 0) {
+        if (duracion != null && duracion <= 0) {
             throw new IllegalArgumentException("La duracion de la mision ha de ser mayor que 0.");
         }
-        this.duracion = duracion;
+        if(duracion != null){
+            this.duracion = duracion;
+        } else{
+            this.duracion = DURACION_POR_DEFECTO;
+        }
     }
 
     public void comprobarEditable(){

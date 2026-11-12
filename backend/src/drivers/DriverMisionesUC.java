@@ -7,13 +7,17 @@ import java.util.Map;
 
 import main.uc.MisionesUC;
 
+
+/**
+ * @author Adrià
+ */
 public class DriverMisionesUC {
 
     private static final inout io = new inout();
     private static final MisionesUC uc = new MisionesUC();
 
     public static void main(String[] args) throws Exception {
-        io.writeln("--- Driver de MisionesUC ---");
+        io.writeln("--- Driver de MisionesUC --- \n En futuras implementaciones exsitirá la opcion de añadir / quitar material \n");
         mostrarMenu();
 
         boolean salir = false;
@@ -39,11 +43,11 @@ public class DriverMisionesUC {
                     case 5 -> eliminarPrerrequisito();
                     case 6 -> definirRolPlantilla();
                     case 7 -> eliminarRolPlantilla();
-                    case 8 -> definirMaterial();
-                    case 9 -> eliminarMaterial();
-                    case 10 -> consultarMision();
-                    case 11 -> listarMisiones();
-                    case 12 -> mostrarMenu();
+                    //case 8 -> definirMaterial();
+                    //case 9 -> eliminarMaterial();
+                    case 8 -> consultarMision();
+                    case 9 -> listarMisiones();
+                    case 10 -> mostrarMenu();
                     default -> io.writeln("El número introducido no es una opción válida");
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
@@ -53,7 +57,7 @@ public class DriverMisionesUC {
         io.writeln("Fin del driver");
     }
 
-    // opcion 12
+    // opcion 10
     private static void mostrarMenu() throws Exception {
         io.writeln(" 1. Crear misión");
         io.writeln(" 2. Modificar misión");
@@ -62,11 +66,11 @@ public class DriverMisionesUC {
         io.writeln(" 5. Eliminar prerrequisito");
         io.writeln(" 6. Definir rol en plantilla");
         io.writeln(" 7. Eliminar rol de plantilla");
-        io.writeln(" 8. Definir material requisito (no esta implementado para la 1a entrega)");
-        io.writeln(" 9. Eliminar material requisito (no esta implementado para la 1a entrega)");
-        io.writeln("10. Consultar misión");
-        io.writeln("11. Listar misiones (con filtro de estado)");
-        io.writeln("12. Mostrar este menú");
+        //io.writeln(" 8. Definir material requisito (no esta implementado para la 1a entrega)");
+        //io.writeln(" 9. Eliminar material requisito (no esta implementado para la 1a entrega)");
+        io.writeln(" 8. Consultar misión");
+        io.writeln(" 9. Listar misiones (con filtro de estado)");
+        io.writeln("10. Mostrar este menú");
         io.writeln(" 0. Salir");
     }
 
@@ -158,8 +162,8 @@ public class DriverMisionesUC {
                 prerrequisitos.add(p);
             }
         }
-
-        String materialInput = leerTexto("Materiales requisitos (ej: C4 2 GANZUA 1) (vacío si no tiene)\n(aun no esta implementado para la 1a entrega, dejalo vacio): ");
+        
+        String materialInput = "";
         Map<String, Integer> material = new HashMap<>();
         if (!materialInput.isEmpty()) {
             String[] partes = materialInput.split("\\s+");
@@ -167,6 +171,7 @@ public class DriverMisionesUC {
                 material.put(partes[i], Integer.parseInt(partes[i + 1]));
             }
         }
+        
 
         uc.crearMision(nombreClave, ubicacion, botin, probFracaso, duracion, plantilla, prerrequisitos, material);
         io.writeln("Misión creada con éxito.");
@@ -178,8 +183,11 @@ public class DriverMisionesUC {
         String ubicacion = leerTexto("Nueva ubicación: ");
         long botin = leerLong("Nuevo botín: ");
         double probFracaso = leerDouble("Nueva probabilidad de fracaso: ");
-        int duracion = leerEntero("Nueva duración: ");
-
+        String durStr = leerTexto("Nueva duración (vacío para usar valor el por defecto 12): ");
+        Integer duracion = null;
+        if (!durStr.isEmpty()) {
+            duracion = Integer.parseInt(durStr);
+        }
         uc.modificarMision(nombreClave, ubicacion, botin, probFracaso, duracion);
         io.writeln("Misión modificada con éxito.");
     }
@@ -228,7 +236,7 @@ public class DriverMisionesUC {
         io.writeln("Rol eliminado de la plantilla con éxito.");
     }
 
-    // 8
+    /* 
     private static void definirMaterial() throws Exception {
         String nombreClave = leerTexto("Nombre clave de la misión: ");
         String nombreObjeto = leerTexto("Nombre del objeto material: ");
@@ -238,7 +246,7 @@ public class DriverMisionesUC {
         io.writeln("Requisito de material configurado con éxito.");
     }
 
-    // 9
+    
     private static void eliminarMaterial() throws Exception {
         String nombreClave = leerTexto("Nombre clave de la misión: ");
         String nombreObjeto = leerTexto("Nombre del objeto material a eliminar: ");
@@ -246,8 +254,9 @@ public class DriverMisionesUC {
         uc.eliminarMaterial(nombreClave, nombreObjeto);
         io.writeln("Requisito de material eliminado con éxito.");
     }
+    */
 
-    // 10
+    // 8
     private static void consultarMision() throws Exception {
         String nombreClave = leerTexto("Nombre clave de la misión a consultar: ");
         String[] datos = uc.consultarMision(nombreClave);
@@ -257,7 +266,7 @@ public class DriverMisionesUC {
         mostrarFilas("nombreClave | ubicacion | botin | probFracaso | duracion | estado", lista);
     }
 
-    // 11
+    // 9
     private static void listarMisiones() throws Exception {
         String estado = leerTexto("Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): ");
         String filtroEstado = null;

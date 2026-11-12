@@ -1,5 +1,8 @@
 package main.model;
 
+/**
+ * @author Adrià
+ */
 public class PlantillaRol{
     private final Mision mision; //nunca se pueden cambiar por eso el final
     private final TRol rol;

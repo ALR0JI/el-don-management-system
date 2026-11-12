@@ -2,6 +2,10 @@ package main.model;
 
 import java.util.Random;
 
+
+/**
+ * @author Adrià
+ */
 public class Objeto {
 
     public static final double PROB_PERDIDA_MATERIAL = 25.0;
