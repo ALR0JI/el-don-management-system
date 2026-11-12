@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 
+/**
+ * @author Alejandro
+ */
 public class SeguimientoUC {
     private static final int TAM_TOP = 3;
 

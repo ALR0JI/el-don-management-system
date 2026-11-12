@@ -2,7 +2,10 @@ package main.model;
 
 import java.util.List;
 
-// ALEJANDRO: Esta clase es lo que devuelve leerSecuaces y leerMisiones
+/**
+ * @author Alejandro
+ */
+// Esta clase es lo que devuelve leerSecuaces y leerMisiones
 public class ResumenImportacion <T> {       // T es el tipo de los datos leidos (DatosSecuaz o DatosMision)
     private final List<T> datos;            // Datos leidos
     private final List<String> avisos;      // Avisos de lineas invalidas

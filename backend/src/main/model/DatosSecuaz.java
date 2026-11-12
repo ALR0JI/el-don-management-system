@@ -1,6 +1,9 @@
 package main.model;
 
-// ALEJANDRO: Actua de forma similar a una tupla
+/**
+ * @author Alejandro
+ */
+// Actua de forma similar a una tupla
 public class DatosSecuaz {
     private final String nombre;
     private final TRol rol;

@@ -1,6 +1,8 @@
 package main.model;
 
-
+/**
+ * @author Alejandro
+ */
 public class MovimientoCaja {
     private final int id;
     private final int momento;

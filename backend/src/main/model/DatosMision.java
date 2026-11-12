@@ -4,7 +4,10 @@ package main.model;
 import java.util.List;
 import java.util.Map;
 
-// Actua como una tupla
+/**
+ * @author Alejandro
+ */
+// Actua de forma similar a una tupla
 public class DatosMision {
     private final String nombreClave;
     private final long botin;

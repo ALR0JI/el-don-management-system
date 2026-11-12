@@ -3,7 +3,9 @@ package main.model;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * @author Alejandro
+ */
 public class Don {
     public static final double COMISION_MINIMA_DON = 20;
     private static Don instance;

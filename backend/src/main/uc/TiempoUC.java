@@ -11,6 +11,9 @@ import main.model.Secuaz;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Alejandro
+ */
 public class TiempoUC {
     private static final int HORAS_RENOVACION_TIENDA = 48;
     private final CtrlEjecucion ctrlEjecucion;
