@@ -8,6 +8,10 @@ import java.util.Random;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * @author Pol
+ */
+
 public class Ejecucion {
 
     public static final double PROB_INCIDENTE_BASE = 40;

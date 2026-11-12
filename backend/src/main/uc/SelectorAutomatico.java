@@ -5,6 +5,10 @@ import java.util.*;
 
 import main.model.*;
 
+/**
+ * @author Pol
+ */
+
 
 public class SelectorAutomatico {
 
