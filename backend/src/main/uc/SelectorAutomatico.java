@@ -214,16 +214,21 @@ public class SelectorAutomatico {
         return valors;
     }
 
-    private static boolean[] crossover(boolean[] pare1, boolean[] pare2, Random random) {
+    private static List<boolean[]> crossover(boolean[] pare1, boolean[] pare2, Random random) {
         int m = pare1.length;
         //creo un punt de tall aleatori per separar pare1 i pare2:
         int pivot = (m == 0) ? 0 : random.nextInt(m);
-        boolean[] fill = new boolean[m];
+        boolean[] fill1 = new boolean[m];
+        boolean[] fill2 = new boolean[m];
         for (int i = 0; i < m; i++) {
             //si la posicio que estic consultant està abans del punt de tall, agafo del pare1, sino agafo del pare2
-            fill[i] = (i < pivot) ? pare1[i] : pare2[i];
+            fill1[i] = (i < pivot) ? pare1[i] : pare2[i];
+            fill2[i] = (i < pivot) ? pare2[i] : pare1[i];
         }
-        return fill;
+        List<boolean[]> fills = new ArrayList<>(2);
+        fills.add(fill1);
+        fills.add(fill2);
+        return fills;
     }
 
     private static void mutar(boolean[] cromosoma, Random random) {
@@ -240,14 +245,20 @@ public class SelectorAutomatico {
             boolean[] pare1 = torneig(poblacio, valors, random);
             boolean[] pare2 = torneig(poblacio, valors, random);
 
-            boolean[] fill;
+            List<boolean[]> fills = new ArrayList<>();
+
             if (random.nextDouble() * 100 < PROB_CROSS) {
-                fill = crossover(pare1, pare2, random);
+                fills = crossover(pare1, pare2, random);
             } else {
-                fill = pare1.clone();
+                fills.add(pare1.clone());
+                fills.add(pare2.clone());
             }
-            mutar(fill, random);
-            nova.add(fill);
+
+            for (boolean[] fill : fills) {
+                mutar(fill, random);
+                nova.add(fill);
+            }
+
         }
         return nova;
     }
@@ -299,7 +310,7 @@ public class SelectorAutomatico {
 
         // primera passada: els encaixos (cada secuaz al puesto de la seva especialitat)
         for (Mision mision : escollides) {
-            Map<TRol, List<Secuaz>> equip = new HashMap<>(); //creo un mapa que determinara QUI ocupara la posició de cada rol
+            Map<TRol, List<Secuaz>> equip = new EnumMap<>(TRol.class); //creo un mapa que determinara QUI ocupara la posició de cada rol (EnumMap per a que segueixi el mateix ordre en diferents execucions, el hashmap no fa aixo)
             for (PlantillaRol pr : mision.getPlantillasRol()) { //recorro tota la plantilla que necessitare a la missio i assigno
                 List<Secuaz> assignats = new ArrayList<>();
                 Iterator<Secuaz> it = copia.iterator();
