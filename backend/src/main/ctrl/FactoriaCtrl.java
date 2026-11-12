@@ -51,6 +51,7 @@ public class FactoriaCtrl {
     public CtrlCandidato getCtrlCandidato() {
         if (ctrlCandidato == null) {
             ctrlCandidato = new CtrlCandidato();
+            ctrlCandidato.inicializarCandidatos();
         }
         return ctrlCandidato;
     }
