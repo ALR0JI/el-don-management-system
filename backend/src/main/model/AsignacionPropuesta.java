@@ -22,7 +22,7 @@ public class AsignacionPropuesta {
         // copia propia: si quien la creó la modifica después, la propuesta no cambia
         this.asignacion = new HashMap<>();
         for (Map.Entry<TRol, List<Secuaz>> e : asignacion.entrySet()) {
-            this.asignacion.put(e.getKey(), new ArrayList<>(e.getValue()));
+            this.asignacion.put(e.getKey(), Collections.unmodifiableList(new ArrayList<>(e.getValue())));
         }
         this.probExito = probExito;
         this.beneficioEsperado = beneficioEsperado;
