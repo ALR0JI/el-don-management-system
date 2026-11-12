@@ -6,6 +6,9 @@ import java.util.Map;
 
 import main.model.Secuaz;
 
+/**
+ * @author Alejandro
+ */
 public class CtrlSecuaz {
     private final Map<Integer, Secuaz> secuaces = new LinkedHashMap<>();
 

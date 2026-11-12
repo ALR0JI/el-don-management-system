@@ -6,6 +6,9 @@ import java.util.Map;
 
 import main.model.Ejecucion;
 
+/**
+ * @author Alejandro
+ */
 public class CtrlEjecucion {
     private final Map<Integer, Ejecucion> ejecuciones = new LinkedHashMap<>();
 

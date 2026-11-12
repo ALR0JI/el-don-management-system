@@ -7,12 +7,14 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
+/**
+ * @author Alejandro
+ */
 public class CtrlFichero {
 
     public List<String> leerLineas(String ruta) {
         try {
             return Files.readAllLines(Path.of(ruta), StandardCharsets.UTF_8);
-            // ALEJANDRO:
             // readAllLies lee el fichero y lo separa por los saltos de liea
             // Path.of convierte el string ruta en un objeto "Path"
             // StandardCharsets define la codificacion como UTF8

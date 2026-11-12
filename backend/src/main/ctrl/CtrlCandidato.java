@@ -7,11 +7,14 @@ import java.util.Map;
 
 import main.model.Candidato;
 
+/**
+ * @author Alejandro
+ */
 public class CtrlCandidato {
     private final Map<String, Candidato> candidatos = new LinkedHashMap<>();
 
     private void inicializarCandidatos() {
-        insertar(new Candidato("Manu Bravas", "El Petancas", 5000L, TRol.ASALTO));
+        insertar(new Candidato("Tito Manolo", "El Petancas", 5000L, TRol.ASALTO));
         insertar(new Candidato("Alex Herrero", "El Sobrino", 7500L, TRol.HACKER));
         insertar(new Candidato("Alicia Ageno", "La Coordi", 10000L, TRol.CONDUCTOR));
         insertar(new Candidato("Louis Litt", "El Reloj", 7500L, TRol.NEGOCIADOR));

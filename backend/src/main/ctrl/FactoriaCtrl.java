@@ -1,6 +1,8 @@
 package main.ctrl;
 
-
+/**
+ * @author Alejandro
+ */
 public class FactoriaCtrl {
     private static FactoriaCtrl instance;
 
@@ -62,6 +64,6 @@ public class FactoriaCtrl {
 
     public static void reiniciar() {
         instance = null;
-        // ALEJANDRO: no hace falta hacer delete como en c++ por el trash collector de Java
+        // No hace falta hacer delete como en c++ por el trash collector de Java
     }
 }

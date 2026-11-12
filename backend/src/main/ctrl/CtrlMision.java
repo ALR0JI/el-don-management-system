@@ -6,6 +6,9 @@ import java.util.Map;
 
 import main.model.Mision;
 
+/**
+ * @author Alejandro
+ */
 public class CtrlMision {
     private final Map<String, Mision> misiones = new LinkedHashMap<>();
 

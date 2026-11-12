@@ -6,7 +6,9 @@ import java.util.Map;
 
 import main.model.Objeto;
 
-
+/**
+ * @author Alejandro
+ */
 public class CtrlObjeto {
     private final Map<String, Objeto> objetos = new LinkedHashMap<>();
 
