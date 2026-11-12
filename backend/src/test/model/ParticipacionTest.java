@@ -14,6 +14,9 @@ import main.model.TConsecuencia;
 import main.model.TResultado;
 import main.model.TRol;
 
+/**
+ * @author Noa
+ */
 public class ParticipacionTest {
 
     @Mock private Secuaz secuaz;

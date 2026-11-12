@@ -4,11 +4,17 @@ import java.util.List;
 
 import main.uc.SecuacesUC;
 
+
+
 //Pendiente: Preguntar si puedo añadir funciones para darle dinero a Don,
 //detener a un secuaz(solo se hace al acabar una mision) y ver la caja de Don
 //Además de interactivo, se puede introducir un fichero de texto si se añade el final del comando:
 //  java -cp out/backend:out/drivers drivers.DriverSecuacesUC < entrada.txt
 //El fichero de texto siempre debe acabar en 0.
+
+/**
+ * @author Noa
+ */
 public class DriverSecuacesUC {
 
     //Utilizamos el fichero inout colgado en la web de prop

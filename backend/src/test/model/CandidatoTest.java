@@ -6,6 +6,9 @@ import static org.junit.Assert.*;
 import main.model.Candidato;
 import main.model.TRol;
 
+/**
+ * @author Noa
+ */
 public class CandidatoTest {
 
     private Candidato candidato;

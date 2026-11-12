@@ -6,6 +6,9 @@ import static org.junit.Assert.*;
 import main.model.TConsecuencia;
 import main.model.TRol;
 
+/**
+ * @author Noa
+ */
 public class TRolTest {
 
     //Comprueba que existen los 5 roles.

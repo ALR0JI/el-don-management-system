@@ -1,6 +1,9 @@
 
 package main.model;
 
+/**
+ * @author Noa
+ */
 public class Participacion {
 
     private Secuaz secuaz;

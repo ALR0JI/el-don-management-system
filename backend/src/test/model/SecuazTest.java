@@ -17,6 +17,9 @@ import main.model.TEstadoSec;
 import main.model.TResultado;
 import main.model.TRol;
 
+/**
+ * @author Noa
+ */
 public class SecuazTest {
 
     private Secuaz secuaz;

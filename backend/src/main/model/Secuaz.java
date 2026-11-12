@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Map;
 import java.util.LinkedHashMap;
 
+/**
+ * @author Noa
+ */
 public class Secuaz {
 
     public static final int HORAS_PRISION = 72;

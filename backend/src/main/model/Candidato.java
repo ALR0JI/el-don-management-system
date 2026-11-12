@@ -3,6 +3,9 @@ package main.model;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * @author Noa
+ */
 public class Candidato {
 
     private String nombre;

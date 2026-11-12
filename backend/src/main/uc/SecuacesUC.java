@@ -10,6 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
 
+/**
+ * @author Noa
+ */
 public class SecuacesUC {
 
     public static final int MAX_EN_OFERTA = 4;
