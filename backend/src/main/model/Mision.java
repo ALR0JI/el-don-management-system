@@ -1,10 +1,6 @@
 package main.model;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Mision{
     public static final int DURACION_POR_DEFECTO = 12;
@@ -398,6 +394,7 @@ public class Mision{
         }
     }
     //PARA LA SEGUNDA ENTREGA
+
     public void añadirRequisitoMaterial(Objeto objeto, int cantidad) {
         throw new UnsupportedOperationException("Pendiente 2.ª entrega!");
     }
@@ -407,10 +404,21 @@ public class Mision{
     }
 
     public Map<Objeto, Integer> materialFaltante() {
-        throw new UnsupportedOperationException("Pendiente 2.ª entrega!");
+        Map<Objeto, Integer> faltante = new LinkedHashMap<>();
+        for (RequisitoMaterial r : requisitosMateriales) {
+            int faltan = r.unidadesFaltantes();
+            if (faltan > 0) {
+                faltante.put(r.getObjeto(), faltan);
+            }
+        }
+        return faltante;
     }
 
     public long costeMaterialFaltante() {
-        throw new UnsupportedOperationException("Pendiente 2.ª entrega!");
+        long coste = 0;
+        for (RequisitoMaterial r : requisitosMateriales) {
+            coste += (long) r.unidadesFaltantes() * r.getObjeto().getPrecio();
+        }
+        return coste;
     }
 }

@@ -1,0 +1,7 @@
+Robo_Licoreria 20000 [Conductor 1 Asalto 2] 10 []
+Asalto_Furgon 10000 [Conductor 1 Hacker 1] 5 []
+Asalto_A_Rectorado 5000 [Conductor 1 Negociador 1] 3 []
+Infiltracion_Lifeinvader 5000 [Conductor 1 Negociador 1 Asalto 1] 15 [Asalto_Furgon Robo_Licoreria]
+Golpe_Merryweather 2000000 [Conductor 2 Asalto 2 Negociador 1] 30 [Robo_Licoreria]
+Atraco_LasVenturas 70000000 [Conductor 1 Asalto 2 Negociador 2] 50 [Infiltracion_Lifeinvader]
+Three_Leaf_Clover 500000000 [Conductor 1 Asalto 2 Negociador 2 Cerrajero 1] 75 [Atraco_LasVenturas Golpe_Merryweather Asalto_A_Rectorado]
