@@ -34,6 +34,9 @@ public class SelectorAutomatico {
             if (s.esLibre()) secuacesDisponibles.add(s);
         }
 
+        //comptem els sequaços lliures per rol UNA sola vegada (abans es feia a cada avaluacio de cromosoma)
+        Map<TRol, Integer> basePorRol = contarDisponibles(secuacesDisponibles);
+
         //fem aixo per crear tots els cromosomes
         List<boolean[]> poblacio = crearPoblacio(TAMANY_POBLACIO, misionesDisponibles.size(), random);
 
@@ -48,7 +51,7 @@ public class SelectorAutomatico {
         double valorMillor = 0.0;
 
         for (int g = 0; g <= GENERACIONS; g++) {
-            valors = avaluar(poblacio, misionesDisponibles, secuacesDisponibles, caja);
+            valors = avaluar(poblacio, misionesDisponibles, secuacesDisponibles.size(), basePorRol, caja);
             //posicio i de valors = fitness del cromosoma que hi ha en la posicio i de poblacio
 
             for (int i = 0; i < poblacio.size(); i++) {
@@ -123,13 +126,10 @@ public class SelectorAutomatico {
         return poblacio;
     }
 
-    private static double fitness(boolean[] cromosoma, List<Mision> misiones, List<Secuaz> secuaces) {
+    private static double fitness(boolean[] cromosoma, List<Mision> misiones,
+                                  int numSecuacesDisponibles, Map<TRol, Integer> basePorRol) {
         int numSecuacesNecesarios = 0;
-        int numSecuacesDisponibles = secuaces.size();
         double fitnessTotal = 0.0;
-
-        //faig un map amb el contador de sequaços separats per rol per anar-lo actualitzant a mesura que els assigno a missions
-        Map<TRol, Integer> secuacesPorRol = contarDisponibles(secuaces);
 
         List<Mision> escollides = new ArrayList<>();
 
@@ -144,6 +144,10 @@ public class SelectorAutomatico {
                 return 0.0;
             }
         }
+
+        //copia del contador de sequaços per rol (calcularEncajes el va restant, i no volem tocar l'original)
+        //es fa despres del tall de dalt: els cromosomes inviables ni paguen la copia
+        Map<TRol, Integer> secuacesPorRol = new HashMap<>(basePorRol);
 
         Map<Mision, Integer> encaixosMissio = calcularEncajes(escollides, secuacesPorRol);
 
@@ -206,10 +210,11 @@ public class SelectorAutomatico {
     }
 
     //pel genètic, ho fem servir per omplir matriu "valors" amb tots els fitness, tenint en compte el material i tot
-    private static double[] avaluar(List<boolean[]> poblacio, List<Mision> misiones, List<Secuaz> secuaces, long caja) {
+    private static double[] avaluar(List<boolean[]> poblacio, List<Mision> misiones,
+                                    int numSecuaces, Map<TRol, Integer> basePorRol, long caja) {
         double[] valors = new double[poblacio.size()];
         for (int i = 0; i < poblacio.size(); i++) {
-            valors[i] = fitnessAmbMaterial(poblacio.get(i), misiones, secuaces, caja);
+            valors[i] = fitnessAmbMaterial(poblacio.get(i), misiones, numSecuaces, basePorRol, caja);
         }
         return valors;
     }
@@ -265,8 +270,8 @@ public class SelectorAutomatico {
 
     // crida a la funció de fitness feta anteriroment i resta el cost del material
     private static double fitnessAmbMaterial(boolean[] cromosoma, List<Mision> misiones,
-                                             List<Secuaz> secuaces, long caja) {
-        double f = fitness(cromosoma, misiones, secuaces);
+                                             int numSecuaces, Map<TRol, Integer> basePorRol, long caja) {
+        double f = fitness(cromosoma, misiones, numSecuaces, basePorRol);
         if (f <= 0) return 0.0;     // impossible o sense benefici
 
         List<Mision> escollides = new ArrayList<>();
@@ -305,7 +310,12 @@ public class SelectorAutomatico {
 
     //part d'assignacio (nomes ho fem amb el millor cromosoma)
     private static Map<Mision, Map<TRol, List<Secuaz>>> assignarEquips(List<Mision> escollides, List<Secuaz> lliures) {
-        List<Secuaz> copia = new ArrayList<>(lliures);   //fem una copia per anar treient secuaços
+        //agrupem els lliures per rol UNA sola vegada, en una cua per rol (mantenint l'ordre original dins de cada rol)
+        //aixi agafar el seguent secuaz d'un rol es poll(), O(1), en lloc de recorrer i esborrar d'una llista (O(s))
+        Map<TRol, Deque<Secuaz>> perRol = new EnumMap<>(TRol.class);
+        for (Secuaz s : lliures) {
+            perRol.computeIfAbsent(s.getEspecialidad(), r -> new ArrayDeque<>()).add(s);
+        }
         Map<Mision, Map<TRol, List<Secuaz>>> equips = new LinkedHashMap<>();
 
         // primera passada: els encaixos (cada secuaz al puesto de la seva especialitat)
@@ -313,29 +323,30 @@ public class SelectorAutomatico {
             Map<TRol, List<Secuaz>> equip = new EnumMap<>(TRol.class); //creo un mapa que determinara QUI ocupara la posició de cada rol (EnumMap per a que segueixi el mateix ordre en diferents execucions, el hashmap no fa aixo)
             for (PlantillaRol pr : mision.getPlantillasRol()) { //recorro tota la plantilla que necessitare a la missio i assigno
                 List<Secuaz> assignats = new ArrayList<>();
-                Iterator<Secuaz> it = copia.iterator();
-                while (it.hasNext() && assignats.size() < pr.getCantidad()) { //recorro tots els sequaços que tinc lliures
-                    //fent referencia al iterador per poder eliminar els ja assignats
-                    Secuaz s = it.next();
-                    if (s.getEspecialidad() == pr.getRol()) {
-                        assignats.add(s);
-                        it.remove();
-                    }
+                Deque<Secuaz> cua = perRol.get(pr.getRol()); //la cua dels secuaços lliures d'aquell rol (null si no n'hi ha cap)
+                while (cua != null && !cua.isEmpty() && assignats.size() < pr.getCantidad()) {
+                    assignats.add(cua.poll()); //poll treu el primer de la cua en O(1)
                 }
                 equip.put(pr.getRol(), assignats);
             }
             equips.put(mision, equip);
         }
 
-        // els que sobren, de menor a major salari
-        copia.sort((a, b) -> Double.compare(a.getEspecialidad().getComision(), b.getEspecialidad().getComision()));
+        // els que sobren, de menor a major salari: ja estan agrupats per rol, aixi que nomes cal ordenar els ROLS
+        //per comissio (com a molt 5) i anar posant les seves cues una darrere l'altra
+        List<TRol> rolsPerSalari = new ArrayList<>(perRol.keySet());
+        rolsPerSalari.sort((a, b) -> Double.compare(a.getComision(), b.getComision()));
+        Deque<Secuaz> sobrants = new ArrayDeque<>();
+        for (TRol rol : rolsPerSalari) {
+            sobrants.addAll(perRol.get(rol));
+        }
 
         // un cop ordenats simplement omplim de dalt a baix
         for (Mision mision : escollides) {
             for (PlantillaRol pr : mision.getPlantillasRol()) {
                 List<Secuaz> assignats = equips.get(mision).get(pr.getRol());
                 while (assignats.size() < pr.getCantidad()) {
-                    assignats.add(copia.remove(0));
+                    assignats.add(sobrants.poll());
                 }
             }
         }
@@ -346,4 +357,3 @@ public class SelectorAutomatico {
 
 
 }
-
