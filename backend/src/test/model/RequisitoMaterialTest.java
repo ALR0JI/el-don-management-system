@@ -11,6 +11,9 @@ import org.mockito.junit.MockitoJUnitRunner;
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
+/**
+ * @author Adrià 
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class RequisitoMaterialTest {
 
@@ -89,5 +92,14 @@ public class RequisitoMaterialTest {
 
         verify(objetoMock, times(3)).estaDisponible(2);
         verify(objetoMock, times(3)).getStock();
+    }
+
+    @Test
+    public void testUnidadesFaltantesConStockSuperiorAlNecesarioDevuelveCero() {
+        when(objetoMock.estaDisponible(2)).thenReturn(true);
+        when(objetoMock.getStock()).thenReturn(5);
+
+        assertTrue(requisito.esSuficienteEnAlmacen());
+        assertEquals(0, requisito.unidadesFaltantes());
     }
 }

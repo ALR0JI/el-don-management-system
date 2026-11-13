@@ -14,7 +14,9 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
+/**
+ * @author Adrià
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class MisionTest {
 
@@ -200,6 +202,12 @@ public class MisionTest {
         assertEquals(30000L, misionPrincipal.getBotin());
         assertEquals(15.0, misionPrincipal.getProbFracaso(), 0.001);
         assertEquals(20, misionPrincipal.getDuracion());
+    }
+
+    @Test
+    public void testSetDuracionNulaAsignaPorDefecto() {
+        misionPrincipal.setDuracion(null);
+        assertEquals(Mision.DURACION_POR_DEFECTO, misionPrincipal.getDuracion());
     }
 
     @Test(expected = IllegalStateException.class)

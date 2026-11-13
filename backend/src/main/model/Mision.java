@@ -101,23 +101,23 @@ public class Mision{
     }
 
     public List<Mision> getPrerrequisitos(){
-        return prerrequisitos;
+        return  Collections.unmodifiableList(prerrequisitos);
     }
 
     public List<Mision> getDependientes(){
-        return dependientes;
+        return Collections.unmodifiableList(dependientes);
     }
 
     public List<PlantillaRol> getPlantillasRol(){
-        return plantillasRol;
+        return Collections.unmodifiableList(plantillasRol);
     }
 
     public List<RequisitoMaterial> getRequisitosMateriales(){
-        return requisitosMateriales;
+        return Collections.unmodifiableList(requisitosMateriales);
     }
 
     public List<Ejecucion> getEjecuciones(){
-        return ejecuciones;
+        return Collections.unmodifiableList(ejecuciones);
     }
 
     //setters

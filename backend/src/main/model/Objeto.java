@@ -67,6 +67,9 @@ public class Objeto {
 
     //funciones
     public boolean estaDisponible(int cantidad) {
+        if(cantidad <= 0){
+            throw new IllegalArgumentException("La cantidad debe ser mayor que 0.");
+        }
         return stock >= cantidad; 
     }
 
@@ -80,6 +83,9 @@ public class Objeto {
 
     //reduce el stock en "cantidad"
     public boolean descontar(int cantidad) {
+        if (cantidad <= 0) {
+            throw new IllegalArgumentException("La cantidad a añadir debe ser mayor que 0.");
+        }
         if (!estaDisponible(cantidad)) {
             return false;
         }

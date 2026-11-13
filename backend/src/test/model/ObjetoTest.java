@@ -11,7 +11,9 @@ import java.util.Random;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
-
+/**
+ * @author Adrià 
+ */
 @RunWith(MockitoJUnitRunner.class)
 public class ObjetoTest {
 
@@ -50,6 +52,21 @@ public class ObjetoTest {
 
         assertFalse(camion.descontar(5));
         assertEquals(1, camion.getStock());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testAñadirCantidadInvalidaLanzaExcepcion() {
+        camion.añadir(0);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testDescontarCantidadInvalidaLanzaExcepcion() {
+        camion.descontar(-1);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void testCalcularUnidadesPerdidasRandomNuloLanzaExcepcion() {
+        camion.calcularUnidadesPerdidas(2, false, null);
     }
 
     @Test
