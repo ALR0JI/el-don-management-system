@@ -1,10 +1,6 @@
 package main.model;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Pol
@@ -24,7 +20,7 @@ public class AsignacionPropuesta {
         }
         this.mision = mision;
         // copia propia: si quien la creó la modifica después, la propuesta no cambia
-        this.asignacion = new HashMap<>();
+        this.asignacion = new EnumMap<>(TRol.class);
         for (Map.Entry<TRol, List<Secuaz>> e : asignacion.entrySet()) {
             this.asignacion.put(e.getKey(), Collections.unmodifiableList(new ArrayList<>(e.getValue())));
         }
