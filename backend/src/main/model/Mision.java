@@ -384,8 +384,22 @@ public class Mision{
 
     public List<Mision> obtenerDesbloqueosPotenciales() {
         List<Mision> resultado = new ArrayList<>();
+        if (estado == TEstado.COMPLETADA) {
+            return resultado;   // si ja està completada no desbloqueja res de nou
+        }
         for (Mision dep : dependientes) {
-            if (dep.getEstado() == TEstado.BLOQUEADA) {
+            if (dep.getEstado() != TEstado.BLOQUEADA) {
+                continue;
+            }
+            // només es desbloqueja si, a part d'aquesta, tots els seus altres prerequisits ja estan completats
+            boolean restoCompletado = true;
+            for (Mision pre : dep.getPrerrequisitos()) {
+                if (pre != this && pre.getEstado() != TEstado.COMPLETADA) {
+                    restoCompletado = false;
+                    break;
+                }
+            }
+            if (restoCompletado) {
                 resultado.add(dep);
             }
         }

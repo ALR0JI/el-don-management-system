@@ -249,4 +249,20 @@ public class MisionTest {
         assertEquals(1, misionPrincipal.getNumFracasos());
         assertEquals(1, misionPrincipal.getNumIntentos());
     }
+
+    //una mision con otros prerrequisitos pendientes no se desbloquea al completar solo una de ellas
+    @Test
+    public void testDesbloqueosPotencialesIgnoraMisionesConOtrosPrerrequisitosPendientes() {
+        Mision m2 = new Mision("Mision_2", "Sur", 50000L, 20.0, 24, plantillaValida);
+        Mision m3 = new Mision("Mision_3", "Este", 60000L, 15.0, 10, plantillaValida);
+        m2.añadirPrerrequisito(misionPrincipal);
+        m3.añadirPrerrequisito(misionPrincipal);
+        m3.añadirPrerrequisito(m2);   // m3 espera a misionPrincipal Y a m2
+
+        List<Mision> desbloqueos = misionPrincipal.obtenerDesbloqueosPotenciales();
+
+        assertEquals(1, desbloqueos.size());
+        assertTrue(desbloqueos.contains(m2));
+        assertFalse(desbloqueos.contains(m3));
+    }
 }
