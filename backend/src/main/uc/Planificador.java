@@ -1,6 +1,7 @@
 package main.uc;
 
 import main.model.Mision;
+import main.model.TEstado;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,16 +26,18 @@ public class Planificador {
 
         //inicializar gradoEntrada y adjacencia para todas las misiones
         for (Mision m : misiones) {
-            gradoEntrada.put(m, 0);
-            adjacencia.put(m, new ArrayList<>());
+            if (m.getEstado() != TEstado.COMPLETADA && m.getEstado() != TEstado.EN_CURSO) {
+                gradoEntrada.put(m, 0);
+                adjacencia.put(m, new ArrayList<>());
+            }
         }
 
         //construir el grafo de dependencias y calcular grados de entrada
-        for (Mision m : misiones) {
+        for (Mision m : gradoEntrada.keySet()) {
             for (Mision pre : m.getPrerrequisitos()) {
                 if (gradoEntrada.containsKey(pre)) {
                     adjacencia.get(pre).add(m);
-                    gradoEntrada.put(m, gradoEntrada.get(m)+1);
+                    gradoEntrada.put(m, gradoEntrada.get(m) + 1);
                 }
             }
         }
@@ -68,7 +71,7 @@ public class Planificador {
             }
         }
 
-        if (planOrdenado.size() != misiones.size()) {
+        if (planOrdenado.size() != gradoEntrada.size()) {
             throw new IllegalStateException("No se puede generar el plan ordenado porque existe una dependencia circular.");
         }
 
