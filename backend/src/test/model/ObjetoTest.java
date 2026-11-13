@@ -5,7 +5,6 @@ import main.model.*;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.Random;
@@ -18,12 +17,11 @@ public class ObjetoTest {
 
     private Objeto camion;
     private Objeto explosivo;
-
-    @Mock
-    private Random randomMock;
+    private Random random;
 
     @Before
     public void setUp() {
+        random = mock(Random.class, withSettings().withoutAnnotations());   // No se puede hacer @mock de Random en Java 21
         camion = new Objeto("Camion blindado", "Vehiculo de escape", 50000, TUso.REUTILIZABLE, TCategoria.VEHICULO);
         explosivo = new Objeto("C4", "Explosivo plastico", 2000, TUso.SE_GASTA, TCategoria.HERRAMIENTA);
     }
@@ -57,31 +55,31 @@ public class ObjetoTest {
     @Test
     public void testCalcularUnidadesPerdidasConsumible() {
         explosivo.añadir(10);
-        assertEquals(5, explosivo.calcularUnidadesPerdidas(5, true, randomMock));
-        assertEquals(5, explosivo.calcularUnidadesPerdidas(5, false, randomMock));
+        assertEquals(5, explosivo.calcularUnidadesPerdidas(5, true, random));
+        assertEquals(5, explosivo.calcularUnidadesPerdidas(5, false, random));
         
-        verifyNoInteractions(randomMock);
+        verifyNoInteractions(random);
     }
 
     @Test
     public void testCalcularUnidadesPerdidasReutilizableExito() {
         camion.añadir(2);
-        assertEquals(0, camion.calcularUnidadesPerdidas(2, true, randomMock));
+        assertEquals(0, camion.calcularUnidadesPerdidas(2, true, random));
         
-        verifyNoInteractions(randomMock);
+        verifyNoInteractions(random);
     }
 
     @Test
     public void testCalcularUnidadesPerdidasReutilizableFracasoDeterminista() {
         //se simulan 10 tiradas de nextDouble() 4 menores que 0.25 (se pierde el objeto) y 6 mayores que 0.25 (se salva el objeto)
-        when(randomMock.nextDouble()).thenReturn(
+        when(random.nextDouble()).thenReturn(
             0.1, 0.1, 0.1, 0.1,    
             0.5, 0.5, 0.5, 0.5, 0.5, 0.5            
         );
 
-        int perdidas = camion.calcularUnidadesPerdidas(10, false, randomMock);
+        int perdidas = camion.calcularUnidadesPerdidas(10, false, random);
         assertEquals(4, perdidas);
 
-        verify(randomMock, times(10)).nextDouble();
+        verify(random, times(10)).nextDouble();
     }
 }

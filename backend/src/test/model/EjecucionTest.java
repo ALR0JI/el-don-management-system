@@ -26,6 +26,7 @@ public class EjecucionTest {
     private static final int DURACION = 12;
     private static final int HORA_FIN = HORA_INICIO + DURACION;
     private static final long BOTIN = 10000L;
+    private Random random;
 
     // Mocks
     @Mock private Mision mision;
@@ -34,13 +35,14 @@ public class EjecucionTest {
     @Mock private Secuaz conductor;
     @Mock private Secuaz hacker;
     @Mock private Secuaz asalto;
-    @Mock private Random random;
+
     // Don y Reloj no tienen mock pq con mockito 4.9 sus getInstance() son estaticos: se usan los reales y se reinician
     // Participacion tampoco: la crea iniciar() con new, asi que es la real (con Secuaz simulado)
 
     // Por defecto: mision de 2 puestos (conductor y hacker), 10% de fracaso, sin material, y secuaces libres en su especialidad
     @Before
     public void setUp() {
+        random = mock(Random.class, withSettings().withoutAnnotations()); // No se puede hacer @mock de Random en Java 21
         Don.reiniciar();
         Reloj.reiniciar();
 
