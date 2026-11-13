@@ -114,11 +114,11 @@ public class Ejecucion {
         int n = mision.getPersonalTotal();
         int m = 0;
         for (Map.Entry<TRol, List<Secuaz>> puesto : asignacion.entrySet()) {
+            int encajes = 0;
             for (Secuaz s : puesto.getValue()) {
-                if (s.getEspecialidad() == puesto.getKey()) {
-                    m++;
-                }
+                if (s.getEspecialidad() == puesto.getKey()) encajes++;
             }
+            m += Math.min(encajes, mision.getCantidadRol(puesto.getKey()));
         }
         return (double) m / n * (100 - mision.getProbFracaso());
     }
@@ -222,14 +222,6 @@ public class Ejecucion {
         }
     }
 
-    //POL: Estas dos funciones ya estaban en el esqueleto, no se si son para que funcione otro programa pero yo no las he usado para nada (tampoco estan en el funciones.md)
-    public void setResultado(TResultado resultado) {
-        throw new UnsupportedOperationException("Pendiente 2.ª entrega");
-    }
-
-    public void añadirParticipacion(Participacion participacion) {
-        throw new UnsupportedOperationException("Pendiente 2.ª entrega");
-    }
 
     public int getId() {return id; }
     public Mision getMision() {return mision; }
