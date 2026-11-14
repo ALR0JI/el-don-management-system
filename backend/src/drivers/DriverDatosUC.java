@@ -103,18 +103,24 @@ public class DriverDatosUC {
     }
 
     private static void leerSecuaces() throws Exception {
-        String ruta = leerTexto("Introduce la ruta del archivo: ");
+        String ruta = leerTexto("Introduce la ruta del archivo (vacio = ruta por defecto): ");
         List<String> avisos = new ArrayList<>();
-        List<String[]> filas = uc.leerSecuaces(ruta, avisos);
+        List<String[]> filas;
+        if (ruta.isEmpty()) {
+            filas = uc.leerSecuaces(RUTA_SECUACES_DEFAULT, avisos);
+        }
+        else {
+            filas = uc.leerSecuaces(ruta, avisos);
+        }
         mostrarFilas("Nombre | Rol", filas);
         mostrarAvisos(avisos);
     }
 
     private static void confirmarSecuaces() throws Exception {
-        String ruta = leerTexto("Introduce la ruta del archivo a confirmar ('Default' para la ruta por defecto): ");
+        String ruta = leerTexto("Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): ");
         List<String> avisos = new ArrayList<>();
         List<String[]> filas;
-        if (ruta.equals("Default")) {
+        if (ruta.isEmpty()) {
             filas = uc.leerSecuaces(RUTA_SECUACES_DEFAULT, avisos);
         }
         else {
@@ -126,18 +132,24 @@ public class DriverDatosUC {
     }
 
     private static void leerMisiones() throws Exception {
-        String ruta = leerTexto("Introduce la ruta del archivo: ");
+        String ruta = leerTexto("Introduce la ruta del archivo (vacio = ruta por defecto): ");
         List<String> avisos = new ArrayList<>();
-        List<String[]> filas = uc.leerMisiones(ruta, avisos);
+        List<String[]> filas;
+        if (ruta.isEmpty()) {
+            filas = uc.leerMisiones(RUTA_MISIONES_DEFAULT, avisos);
+        }
+        else {
+            filas = uc.leerMisiones(ruta, avisos);
+        }
         mostrarFilas("Nombre | Botin | Plantilla | Probabilidad | Dependencias", filas);
         mostrarAvisos(avisos);
     }
 
     private static void confirmarMisiones() throws Exception {
-        String ruta = leerTexto("Introduce la ruta del archivo a confirmar ('Default' para la ruta por defecto): ");
+        String ruta = leerTexto("Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): ");
         List<String> avisos = new ArrayList<>();
         List<String[]> filas;
-        if (ruta.equals("Default")) {
+        if (ruta.isEmpty()) {
             filas = uc.leerMisiones(RUTA_MISIONES_DEFAULT, avisos);
         }
         else {
