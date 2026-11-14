@@ -25,7 +25,7 @@ public class DriverSeguimientoUC {
             "Nombre Clave | Ubicacion | Botin | Estado | Num Intentos | Num Fracasos";
 
     //Utilizamos el fichero inout colgado en la web de prop
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final SeguimientoUC uc = new SeguimientoUC();
 
     public static void main(String[] args) throws Exception {
@@ -60,15 +60,22 @@ public class DriverSeguimientoUC {
                     case 10 -> top3Operativos();
                     case 11 -> top3GolpesHistoricos();
                     case 12 -> top3PuntosCalientes();
-                    case 13 -> mostrarMenu();
-                    default -> io.writeln("El número introducido no es una opción");
+                    case 13 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
                 //Esta línea muestra las excepciones de las propias funciones
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     private static void mostrarMenu() throws Exception {

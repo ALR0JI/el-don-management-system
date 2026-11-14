@@ -31,8 +31,9 @@ compile-drivers: compile
 	mkdir -p out/drivers
 	javac -encoding UTF-8 -cp out/backend -d out/drivers $(DRIVER_SRC)
 
-# make driver D=DriverSecuacesUC
-# make driver D=DriverSecuacesUC IN=ruta/entrada.txt
+# make driver
+# make driver IN=ruta/entrada.txt
+D ?= DriverPrincipal
 driver: compile-drivers
 	java -cp "$(DRIVER_CP)" drivers.$(D) $(if $(IN),< $(IN))
 

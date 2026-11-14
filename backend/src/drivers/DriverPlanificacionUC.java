@@ -11,7 +11,7 @@ import main.uc.Planificador;
 */
 public class DriverPlanificacionUC {
 
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final PlanificacionUC uc = new PlanificacionUC(
         new Planificador(), 
         FactoriaCtrl.getInstance().getCtrlMision()
@@ -38,14 +38,21 @@ public class DriverPlanificacionUC {
                 switch (opcion) {
                     case 0 -> salir = true;
                     case 1 -> planificarEstrategiaGlobal();
-                    case 2 -> mostrarMenu();
-                    default -> io.writeln("El número introducido no es una opción válida");
+                    case 2 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción válida");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     // opcion 2

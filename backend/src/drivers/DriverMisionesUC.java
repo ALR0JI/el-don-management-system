@@ -13,7 +13,7 @@ import main.uc.MisionesUC;
  */
 public class DriverMisionesUC {
 
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final MisionesUC uc = new MisionesUC();
 
     public static void main(String[] args) throws Exception {
@@ -47,14 +47,21 @@ public class DriverMisionesUC {
                     //case 9 -> eliminarMaterial();
                     case 8 -> consultarMision();
                     case 9 -> listarMisiones();
-                    case 10 -> mostrarMenu();
-                    default -> io.writeln("El número introducido no es una opción válida");
+                    case 10 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción válida");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     // opcion 10

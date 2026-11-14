@@ -10,7 +10,7 @@ import java.util.List;
  */
 public class DriverTiempoUC {
     //Utilizamos el fichero inout colgado en la web de prop
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final TiempoUC uc = new TiempoUC();
 
     public static void main(String[] args) throws Exception {
@@ -36,15 +36,22 @@ public class DriverTiempoUC {
                     case 1 -> horaActual();
                     case 2 -> avanzarHora();
                     case 3 -> avanzarNHoras();
-                    case 4 -> mostrarMenu();
-                    default -> io.writeln("El número introducido no es una opción");
+                    case 4 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
                 //Esta línea muestra las excepciones de las propias funciones
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     private static void mostrarMenu() throws Exception {

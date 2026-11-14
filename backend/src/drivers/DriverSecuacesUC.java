@@ -3,19 +3,6 @@ package drivers;
 import java.util.List;
 
 import main.uc.SecuacesUC;
-import main.model.Don;
-import main.ctrl.FactoriaCtrl;
-import main.model.Reloj;
-import main.model.Secuaz;
-import main.model.TConsecuencia;
-
-
-
-//Pendiente: Preguntar si puedo añadir funciones para darle dinero a Don,
-//detener a un secuaz(solo se hace al acabar una mision) y ver la caja de Don
-//Además de interactivo, se puede introducir un fichero de texto si se añade el final del comando:
-//  java -cp out/backend:out/drivers drivers.DriverSecuacesUC < entrada.txt
-//El fichero de texto siempre debe acabar en 0.
 
 /**
  * @author Noa
@@ -23,15 +10,11 @@ import main.model.TConsecuencia;
 public class DriverSecuacesUC {
 
     //Utilizamos el fichero inout colgado en la web de prop
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final SecuacesUC uc = new SecuacesUC();
-    private static final Don don = Don.getInstance();
-    private static final long DINERO_INICIAL = 1000000L;
     public static void main(String[] args) throws Exception {
         io.writeln("--- Driver de SecuacesUC ---");
         mostrarMenu();
-        don.registrarComision(DINERO_INICIAL,"Inicio prueba");
-        SecuacesUC.renovarOferta();
 
         boolean salir = false;
         while (!salir) {
@@ -58,17 +41,22 @@ public class DriverSecuacesUC {
                     case 7 -> listarEnOfertaEspecialidad();
                     case 8 -> fichar();
                     case 9 -> renovarOferta();
-                    case 10 -> mostrarMenu();
-                    case 11 -> consultarCaja();
-                    case 12 -> arrestarSecuaz();
-                    default -> io.writeln("El número introducido no es una opción");
+                    case 10 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException e) {
                 //Esta línea muestra las excepciones de las propias funciones
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     private static void mostrarMenu() throws Exception {
@@ -83,10 +71,6 @@ public class DriverSecuacesUC {
         io.writeln(" 8. Fichar candidato");
         io.writeln(" 9. Renovar oferta");
         io.writeln("10. Mostrar este menu");
-        io.writeln("Los siguientes no pertenecen a SecuacesUC pero lo complementan.");
-        io.writeln("11. Consultar caja");
-        io.writeln("12. Arrestar secuaz (obligatorio para pagar fianza)");
-
     }
 
     //Funciones privadas que evitan la repetición de código:
@@ -209,28 +193,6 @@ public class DriverSecuacesUC {
     private static void renovarOferta() throws Exception {
         SecuacesUC.renovarOferta();
         io.writeln("Se ha renovado la oferta");
-    }
-
-    //Funciones ajenas a SecuacesUC pero que facilitan el entendimiento
-    //Opción 10: consultarCaja()
-    private static void consultarCaja() throws Exception {
-        io.writeln("Te quedan " + don.getCaja() + "€");
-    }
-
-    //Arresta a un secuaz (no existe una funcion que lo haga porque solo se puede
-    //arrestar a alguien al acabar una mision)
-    //Opción 11: arrestar()
-    private static void arrestarSecuaz() throws Exception {
-        int id = leerEntero("Id: ");
-        Secuaz s = FactoriaCtrl.getInstance().getCtrlSecuaz().get(id);
-        if (s == null) {
-            throw new IllegalArgumentException("No existe ningún secuaz con id " + id);
-        }
-        if (!s.ocupar()) {
-            throw new IllegalStateException("El secuaz tiene que estar LIBRE para poder arrestarlo");
-        }
-        s.procesarConsecuencia(TConsecuencia.DETENIDO, Reloj.getInstance().horaActual());
-        io.writeln("Secuaz arrestado. Su fianza es de " + s.getFianza() + "€");
     }
 
 }

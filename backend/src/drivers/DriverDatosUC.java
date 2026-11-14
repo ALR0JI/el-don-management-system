@@ -15,7 +15,7 @@ public class DriverDatosUC {
     private static final String RUTA_MISIONES_DEFAULT = "ejemplos/misiones_driver.txt";
 
     //Utilizamos el fichero inout colgado en la web de prop
-    private static final inout io = new inout();
+    private static final inout io = DriverPrincipal.io;
     private static final DatosUC uc = new DatosUC();
 
     public static void main(String[] args) throws Exception {
@@ -43,15 +43,22 @@ public class DriverDatosUC {
                     case 3 -> leerMisiones();
                     case 4 -> confirmarMisiones();
                     case 5 -> empezarPartida();
-                    case 6 -> mostrarMenu();
-                    default -> io.writeln("El número introducido no es una opción");
+                    case 6 -> {
+                        mostrarMenu();
+                        continue;
+                    }
+                    default -> {
+                        io.writeln("El número introducido no es una opción");
+                        continue;
+                    }
                 }
             } catch (IllegalArgumentException | IllegalStateException | UncheckedIOException e) { // Asi un fichero mal escrito no tumba el driver
                 //Esta línea muestra las excepciones de las propias funciones
                 io.writeln("ERROR: " + e.getMessage());
             }
+            salir = true;
         }
-        io.writeln("Fin del driver");
+        io.writeln("Volviendo al Driver Principal");
     }
 
     private static void mostrarMenu() throws Exception {
