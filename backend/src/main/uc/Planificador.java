@@ -24,9 +24,9 @@ public class Planificador {
         Map<Mision, Integer> gradoEntrada = new HashMap<>();
         Map<Mision, List<Mision>> adjacencia = new HashMap<>(); //mapa de cada mision y las que dependen de ella
 
-        //inicializar gradoEntrada y adjacencia para todas las misiones
+        //inicializar gradoEntrada y adjacencia para todas las misiones que no esten ya completadas
         for (Mision m : misiones) {
-            if (m.getEstado() != TEstado.COMPLETADA && m.getEstado() != TEstado.EN_CURSO) {
+            if (m.getEstado() != TEstado.COMPLETADA) {
                 gradoEntrada.put(m, 0);
                 adjacencia.put(m, new ArrayList<>());
             }
