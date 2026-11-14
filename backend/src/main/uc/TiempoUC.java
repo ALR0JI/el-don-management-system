@@ -15,7 +15,7 @@ import java.util.List;
  * @author Alejandro
  */
 public class TiempoUC {
-    private static final int HORAS_RENOVACION_TIENDA = 48;
+    private static final int HORAS_RENOVACION_TIENDA = 24;
     private final CtrlEjecucion ctrlEjecucion;
     private final CtrlSecuaz ctrlSecuaz;
 
