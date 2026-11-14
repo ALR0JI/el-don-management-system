@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * @author Pol
+ */
 public class PropuestaAutomatica {
 
     private final List<AsignacionPropuesta> asignaciones;
