@@ -1,6 +1,8 @@
 package main.model;
 
-
+/**
+ * @author Alejandro
+ */
 public enum TRol {
     CONDUCTOR (15, 1500, 10),
     ASALTO (20, 2000, 30),
