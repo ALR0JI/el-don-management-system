@@ -8,7 +8,7 @@ public class PlantillaRol{
     private final TRol rol;
     private int cantidad;
 
-    PlantillaRol(Mision mision, TRol rol, int cantidad){
+    public PlantillaRol(Mision mision, TRol rol, int cantidad){
         if(mision == null){
             throw new IllegalArgumentException("Mision no puede ser null.");
         }
