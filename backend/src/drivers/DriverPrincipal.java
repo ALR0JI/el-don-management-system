@@ -1,5 +1,7 @@
 package drivers;
 
+import main.uc.SecuacesUC;
+
 /**
  * @author Noa
  */
@@ -11,6 +13,7 @@ public class DriverPrincipal {
     public static void main(String[] args) throws Exception {
         io.writeln("=== DRIVER PRINCIPAL ===");
         mostrarMenu();
+        SecuacesUC.renovarOferta();
 
         boolean salir = false;
         while (!salir) {
