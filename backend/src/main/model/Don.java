@@ -7,6 +7,11 @@ import java.util.List;
  * @author Alejandro
  */
 public class Don {
+    /**
+     * Se entiende que no es necesario que Don se lleve una comision minima en caso que los roles con los que
+     * se ejecute la mision sumen en comisiones mas de un 80%. Se mantiene el atributo porque lo pone el enunciado
+     * y por si se implementara en un futuro.
+     */
     public static final double COMISION_MINIMA_DON = 20;
     private static Don instance;
 
