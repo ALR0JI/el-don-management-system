@@ -9,6 +9,7 @@ import main.model.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Collections;
+import java.util.Locale;
 
 /**
  * @author Noa
@@ -42,11 +43,12 @@ public class SecuacesUC {
         return enOferta;
     }
 
-    //Convierte el texto de una especialidad en TRol o lanza excepción si no existe.
+    //Convierte el texto de una especialidad en TRol, sin distinguir mayúsculas y minúsculas,
+    //o lanza excepción si no existe.
     private TRol convertirRol(String especialidad) {
         if (especialidad == null) throw new IllegalArgumentException("La especialidad no puede ser nula");
         try {
-            return TRol.valueOf(especialidad);
+            return TRol.valueOf(especialidad.trim().toUpperCase(Locale.ROOT));
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("No existe la especialidad " + especialidad);
         }

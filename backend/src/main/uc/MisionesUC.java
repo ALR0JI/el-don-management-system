@@ -6,6 +6,7 @@ import main.ctrl.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 
 /**
@@ -35,13 +36,13 @@ public class MisionesUC{
         return m;
     }
 
-    //convierte un string de un rol en TRol 
+    //convierte un string de un rol en TRol, sin distinguir mayúsculas y minúsculas
     private TRol convertirRol(String rolStr) {
         if (rolStr == null) {
             throw new IllegalArgumentException("El rol no puede ser nulo");
         }
         try {
-            return TRol.valueOf(rolStr);
+            return TRol.valueOf(rolStr.trim().toUpperCase(Locale.ROOT));
         } catch (IllegalArgumentException e) {
             throw new IllegalArgumentException("No existe el rol: " + rolStr);
         }
