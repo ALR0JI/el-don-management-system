@@ -60,7 +60,9 @@ public class DriverSeguimientoUC {
                     case 10 -> top3Operativos();
                     case 11 -> top3GolpesHistoricos();
                     case 12 -> top3PuntosCalientes();
-                    case 13 -> {
+                    case 13 -> cadenaPrerrequisitos();
+                    case 14 -> desbloqueosPotenciales();
+                    case 15 -> {
                         mostrarMenu();
                         continue;
                     }
@@ -92,10 +94,18 @@ public class DriverSeguimientoUC {
         io.writeln(" 10. Top 3 Operativos");
         io.writeln(" 11. Top 3 Golpes Historicos");
         io.writeln(" 12. Top 3 Puntos Calientes");
-        io.writeln(" 13. Mostrar Menu");
+        io.writeln(" 13. Cadena Prerrequisitos");
+        io.writeln(" 14. Desbloqueos Potenciales");
+        io.writeln(" 15. Mostrar Menú");
     }
 
     //Funciones privadas que evitan la repetición de código:
+
+    //Muestra la pregunta y devuelve la línea que escribe el usuario.
+    private static String leerTexto(String pregunta) throws Exception {
+        io.write(pregunta);
+        return io.readline().trim();
+    }
 
     //Muestra la pregunta y devuelve el número entero que escribe el usuario.
     private static int leerEntero(String pregunta) throws Exception {
@@ -192,6 +202,16 @@ public class DriverSeguimientoUC {
     private static void top3PuntosCalientes() throws Exception {
         List<String[]> misiones = uc.top3PuntosCalientes();
         mostrarFilas(CABECERA_MISION ,misiones);
+    }
+
+    private static void cadenaPrerrequisitos() throws Exception {
+        String nombre = leerTexto("Introduce el nombre clave de la mision: ");
+        mostrarFilas(CABECERA_MISION, uc.cadenaPrerrequisitos(nombre));
+    }
+
+    private static void desbloqueosPotenciales() throws Exception {
+        String nombre = leerTexto("Introduce el nombre clave de la mision: ");
+        mostrarFilas(CABECERA_MISION, uc.desbloqueosPotenciales(nombre));
     }
 
 }

@@ -173,6 +173,30 @@ public class SeguimientoUC {
         return filas;
     }
 
+    public List<String[]> cadenaPrerrequisitos(String nombreClave) {
+        List<String[]> filas = new ArrayList<>();
+        for (Mision m : obtenerMision(nombreClave).obtenerCadenaPrerrequisitos()) {
+            filas.add(misionToStringVec(m));
+        }
+        return filas;
+    }
+
+    public List<String[]> desbloqueosPotenciales(String nombreClave) {
+        List<String[]> filas = new ArrayList<>();
+        for (Mision m : obtenerMision(nombreClave).obtenerDesbloqueosPotenciales()) {
+            filas.add(misionToStringVec(m));
+        }
+        return filas;
+    }
+
+    private Mision obtenerMision(String nombreClave) {
+        Mision m = ctrlMision.get(nombreClave);
+        if (m == null) {
+            throw new IllegalArgumentException("No existe ninguna mision llamada " + nombreClave);
+        }
+        return m;
+    }
+
     private String[] ejecucionToStringVec(Ejecucion e, int hora) {
         return new String[] {
                 String.valueOf(e.getId()),
