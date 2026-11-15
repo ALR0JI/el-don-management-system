@@ -45,6 +45,7 @@ public class DriverSecuacesUC {
                         mostrarMenu();
                         continue;
                     }
+                    case 11 -> consultarSecuaz();
                     default -> {
                         io.writeln("El número introducido no es una opción");
                         continue;
@@ -71,6 +72,7 @@ public class DriverSecuacesUC {
         io.writeln(" 8. Fichar candidato");
         io.writeln(" 9. Renovar oferta");
         io.writeln("10. Mostrar este menu");
+        io.writeln("11. Consultar ficha de secuaz");
     }
 
     //Funciones privadas que evitan la repetición de código:
@@ -187,6 +189,23 @@ public class DriverSecuacesUC {
         boolean exito = uc.fichar(nombre);
         if(exito) io.writeln("Ahora " + nombre + ", forma parte de tus secuaces!");
         else io.writeln("Don no tiene suficiente dinero para pagar este candidato");
+    }
+
+    //Opción 11: consultarSecuaz(id)
+    private static void consultarSecuaz() throws Exception {
+        int id = leerEntero("Id: ");
+
+        String[] ficha = uc.consultarSecuaz(id);
+        io.writeln("Id: " + ficha[0]);
+        io.writeln("Nombre: " + ficha[1]);
+        io.writeln("Apodo: " + ficha[2]);
+        io.writeln("Especialidad: " + ficha[3]);
+        io.writeln("Estado: " + ficha[4]);
+        io.writeln("Dinero acumulado: " + ficha[5]);
+        if (ficha[4].equals("DETENIDO")) {
+            io.writeln("Fianza: " + ficha[6]);
+            io.writeln("Horas de condena restantes: " + ficha[7]);
+        }
     }
 
     //Opción 9: renovarOferta()

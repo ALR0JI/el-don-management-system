@@ -89,6 +89,26 @@ public class SecuacesUC {
         s.setApodo(apodo);
     }
 
+
+    //{id, nombre, apodo, especialidad, estado, dineroAcumulado, fianza, tiempoRestantePrision}
+    //Si no esta detenido, la fianza y el tiempo restante de prision valen 0
+    public String[] consultarSecuaz(int idSecuaz){
+        Secuaz s = obtenerSecuaz(idSecuaz);
+        String apodo = s.getApodo();
+        if (apodo == null) apodo = "";
+        int horaActual = Reloj.getInstance().horaActual();
+        return new String[] {
+            String.valueOf(s.getId()),
+            s.getNombre(),
+            apodo,
+            s.getEspecialidad().name(),
+            s.getEstado().name(),
+            String.valueOf(s.getDineroAcumulado()),
+            String.valueOf(s.getFianza()),
+            String.valueOf(s.getTiempoRestantePrision(horaActual))
+        };
+    }
+
     //Expulsa al secuaz con idSecuaz
     public boolean expulsar(int idSecuaz){
         Secuaz s = obtenerSecuaz(idSecuaz);
