@@ -51,7 +51,7 @@ public class DatosUC {
 
             // Se cogen todas las palabras menos la ultima, que es el rol, así que el nombre puede tener una o varias palabras
             String nombre = String.join(" ", Arrays.copyOf(palabras, palabras.length - 1));
-            String textoRol = palabras[palabras.length - 1];
+            String textoRol = palabras[palabras.length - 1]; // Entrega 2: permitir añadir apodo
 
             TRol rol;
             try {
@@ -67,7 +67,7 @@ public class DatosUC {
 
     public void confirmarSecuaces(List<String[]> filas) {
         if (filas == null) {
-            throw new IllegalArgumentException("La lista de misiones no puede ser null");
+            throw new IllegalArgumentException("La lista de secuaces no puede ser null");
         }
 
         // filas viene de leerSecuaces asi que la primera posicion es el nombre y la segunda el rol
@@ -88,7 +88,7 @@ public class DatosUC {
         }
 
         for (int i = 0; i < filas.size(); i++) {
-            Secuaz secuaz = new Secuaz(ctrlSecuaz.siguienteId(), nombres.get(i), null, roles.get(i));
+            Secuaz secuaz = new Secuaz(ctrlSecuaz.siguienteId(), nombres.get(i), null, roles.get(i)); // Entrega 2: permitir añadir apodos
             ctrlSecuaz.insertar(secuaz);
         }
     }
@@ -116,9 +116,9 @@ public class DatosUC {
             // Antes de devolver la fila se revisa que todos los parametros sean validos
             try {
                 String[] fila = separarMision(linea);
-                StringToBotin(fila[1]);
-                StringToPlantilla(fila[2]);
-                StringToProbabilidad(fila[3]);
+                // Aunque no se use la mision asi se reutilizan las validaciones de la constructora
+                new Mision(fila[0], null, StringToBotin(fila[1]), StringToProbabilidad(fila[3]), null, StringToPlantilla(fila[2]));
+                convertirDependencias(fila[4]);
                 filas.add(fila);
             } catch (IllegalArgumentException e) {
                 avisos.add("Linea " + numLinea + ": " + e.getMessage());
@@ -150,10 +150,10 @@ public class DatosUC {
                 }
 
                 Mision mision = new Mision( nombre,
-                                   null,
+                                   null,        // Entrega 2
                                             StringToBotin(fila[1]),
                                             StringToProbabilidad(fila[3]),
-                                    null,
+                                    null,       // Entrega 2
                                             StringToPlantilla(fila[2]));
                 misiones.add(mision);
                 dependencias.put(nombre, convertirDependencias(fila[4]));

@@ -17,11 +17,10 @@ backend/
       uc/               controladores de caso de uso (XxxUC) y algoritmos
       ctrl/             controladores de datos (CtrlX) y FactoriaCtrl
     drivers/            DriverPrincipal, un driver por caso de uso e inout
-    test/               tests, en el mismo paquete que la clase que prueban
+    test/               tests, con la misma estructura de paquetes que main
       model/ 
       uc/ 
-      integracion/  
-frontend/
+frontend/               Pendiente 2a entrega
   src/
     main/
       presentacion/     Main, CtrlPresentacion y las vistas Swing
@@ -32,7 +31,7 @@ ejemplos/               ficheros de entrada con el formato del enunciado
 
 ```
 make compile   # compila backend en out/backend y frontend en out/frontend
-make run       # compila y lanza presentacion.Main
+make run       # compila y lanza presentacion.Main (pendiente 2a Entrega)
 make clean     # borra out/
 ```
 

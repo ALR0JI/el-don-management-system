@@ -129,15 +129,22 @@ public class MisionesUC{
 
         Mision mision = new Mision(nombreClave, ubicacion, botin, probFracaso, duracion, plantillaRoles);
 
-        for (Mision prereq : misionesPrerrequisito) {
-            mision.añadirPrerrequisito(prereq); 
+        try {
+            for (Mision prereq : misionesPrerrequisito) {
+                mision.añadirPrerrequisito(prereq);
+            }
+
+            for (Map.Entry<Objeto, Integer> entry : requisitosObjeto.entrySet()) {
+                mision.añadirRequisitoMaterial(entry.getKey(), entry.getValue());
+            }
+
+            ctrlMision.insertar(mision);
+        } catch (RuntimeException e) { // Si algo falla durnate la creacion de la mision se deshacen los enlaces
+            mision.desvincular();
+            throw e;
         }
 
-        for (Map.Entry<Objeto, Integer> entry : requisitosObjeto.entrySet()) {
-            mision.añadirRequisitoMaterial(entry.getKey(), entry.getValue()); 
-        }
 
-        ctrlMision.insertar(mision); 
     }
 
     public void modificarMision(String nombreClave, String ubicacion, long botin, double probFracaso, Integer duracion) {
