@@ -90,12 +90,12 @@ public class ParticipacionTest {
         assertEquals(esperado, participacion.getCobrado());
     }
 
-    //Comprueba que el cobro se trunca y no se redondea.
+    //Comprueba que el cobro se redondea hacia arriba y nunca baja del porcentaje.
     @Test
-    public void testLiquidarCobroTrunca() {
+    public void testLiquidarCobroRedondeaHaciaArriba() {
         //3% de 1050 = 31.5
-        assertEquals(31L, participacion.liquidarCobro(1050L));
-        assertEquals(31L, participacion.getCobrado());
+        assertEquals(32L, participacion.liquidarCobro(1050L));
+        assertEquals(32L, participacion.getCobrado());
     }
 
     //Comprueba que la comisión depende del rol de espacialidad, no del desempeñado
