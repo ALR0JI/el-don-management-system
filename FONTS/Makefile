@@ -35,13 +35,13 @@ compile-drivers:
 # make driver IN=ruta/entrada.txt (ruta relativa al directorio EXE)
 D ?= DriverPrincipal
 driver: compile-drivers
-	cd ../EXE && java -cp out drivers.$(D) $(if $(IN),< $(IN))
+	cd ../EXE && java -Dstdout.encoding=UTF-8 -cp out drivers.$(D) $(if $(IN),< $(IN))
 
 # ejecuta cada juego de prueba de EXE y compara su salida con la esperada
 test-juegos: compile-drivers
 	@cd ../EXE && for e in 0*/entrada*.txt; do \
 		s=$$(echo $$e | sed 's/entrada/salida/; s/\.txt$$/.out/'); \
-		java -cp out drivers.DriverPrincipal < $$e | diff -q - $$s > /dev/null && echo "OK $$e" || echo "DIFERENTE $$e"; \
+		java -Dstdout.encoding=UTF-8 -cp out drivers.DriverPrincipal < $$e | diff -q - $$s > /dev/null && echo "OK $$e" || echo "DIFERENTE $$e"; \
 	done
 
 clean:
