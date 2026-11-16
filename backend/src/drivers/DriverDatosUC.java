@@ -12,7 +12,7 @@ import java.util.List;
 public class DriverDatosUC {
     // Constantes
     private static final String RUTA_SECUACES_DEFAULT = "ejemplos/secuaces_enunciado.txt";
-    private static final String RUTA_MISIONES_DEFAULT = "ejemplos/misiones_driver.txt";
+    private static final String RUTA_MISIONES_DEFAULT = "ejemplos/misiones_enunciado.txt";
 
     //Utilizamos el fichero inout colgado en la web de prop
     private static final inout io = DriverPrincipal.io;

@@ -43,7 +43,7 @@ Los drivers son la capa de presentación de la primera entrega y permiten probar
 
 Todos los drivers comparten los mismos datos a través de `FactoriaCtrl`, así que lo que se carga o se ejecuta en uno se ve en los demás. También comparten una única instancia de `inout`, que está en `DriverPrincipal`, para que no se pierdan líneas de la entrada.
 
-En `DriverDatosUC`, si se deja la ruta vacía se usan los ficheros `ejemplos/misiones_driver.txt` y `ejemplos/secuaces_enunciado.txt` respectivamente.
+En `DriverDatosUC`, si se deja la ruta vacía se usan los ficheros `ejemplos/misiones_enunciado.txt` y `ejemplos/secuaces_enunciado.txt` respectivamente.
 
 ```
 make driver                     # lanza DriverPrincipal de forma interactiva
