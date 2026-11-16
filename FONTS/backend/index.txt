@@ -1,0 +1,4 @@
+Capa de dominio y datos del proyecto.
+
+lib/   Librerias para los tests (JUnit y Mockito) - se han extraido de la documentacion de la asignatura
+src/   Codigo fuente

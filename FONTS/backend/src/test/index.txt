@@ -1,0 +1,4 @@
+Tests JUnit. Se ejecutan con make test.
+
+model/   Tests de las clases del modelo
+uc/      Tests de los algoritmos

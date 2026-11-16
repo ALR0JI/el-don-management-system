@@ -1,0 +1,9 @@
+Controladores de datos (paquete main.ctrl).
+
+CtrlCandidato.java   Candidatos del mercado de secuaces
+CtrlEjecucion.java   Ejecuciones
+CtrlFichero.java     Lectura de ficheros de texto
+CtrlMision.java      Misiones
+CtrlObjeto.java      Objetos
+CtrlSecuaz.java      Secuaces
+FactoriaCtrl.java    Da acceso a todos los controladores de datos

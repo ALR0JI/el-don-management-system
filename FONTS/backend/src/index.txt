@@ -1,0 +1,5 @@
+Codigo fuente del backend.
+
+main/      Clases del dominio
+drivers/   Drivers interactivos de la primera entrega
+test/      Tests JUnit, con los mismos paquetes que main

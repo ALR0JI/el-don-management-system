@@ -1,0 +1,12 @@
+Controladores de caso de uso y algoritmos (paquete main.uc).
+
+DatosUC.java              Importacion de secuaces y misiones
+EjecucionUC.java          Ejecucion manual y ronda automatica
+MercadoNegroUC.java       Mercado negro, pendiente de la segunda entrega
+MisionesUC.java           Gestion de misiones
+PlanificacionUC.java      Planificacion de golpes
+Planificador.java         Algoritmo de planificacion (Kahn con cola de prioridad)
+SecuacesUC.java           Gestion de secuaces y mercado de secuaces
+SeguimientoUC.java        Consultas y estadisticas
+SelectorAutomatico.java   Algoritmo de seleccion automatica (genetico)
+TiempoUC.java             Avance del tiempo

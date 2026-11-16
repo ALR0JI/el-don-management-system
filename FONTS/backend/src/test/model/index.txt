@@ -1,0 +1,17 @@
+Tests de las clases del modelo. Cada fichero XTest.java prueba la clase X.
+
+AsignacionPropuestaTest.java
+AzarTest.java
+CandidatoTest.java
+DonTest.java
+EjecucionTest.java
+MisionTest.java
+MovimientoCajaTest.java
+ObjetoTest.java
+ParticipacionTest.java
+PlantillaRolTest.java
+PropuestaAutomaticaTest.java
+RelojTest.java
+RequisitoMaterialTest.java
+SecuazTest.java
+TRolTest.java

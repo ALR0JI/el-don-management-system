@@ -1,0 +1,5 @@
+Clases del dominio.
+
+model/   Clases del modelo y enumerados
+uc/      Controladores de caso de uso y algoritmos
+ctrl/    Controladores de datos

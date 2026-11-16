@@ -1,0 +1,25 @@
+Clases del modelo y enumerados (paquete main.model).
+
+AsignacionPropuesta.java   Mision de una propuesta automatica con su equipo
+Azar.java                  Generador aleatorio compartido, con semilla
+Candidato.java             Candidato del mercado de secuaces
+Don.java                   El Don, con su caja y sus movimientos
+Ejecucion.java             Ejecucion de una mision
+Mision.java                Mision con su plantilla y sus prerrequisitos
+MovimientoCaja.java        Movimiento de la caja del Don
+Objeto.java                Objeto del mercado negro
+Participacion.java         Participacion de un secuaz en una ejecucion
+PlantillaRol.java          Rol y cantidad que pide una mision
+PropuestaAutomatica.java   Resultado de la seleccion automatica
+Reloj.java                 Hora de juego
+RequisitoMaterial.java     Material que pide una mision
+Secuaz.java                Secuaz de la banda
+TCategoria.java            Enumerado de categorias de objeto
+TConsecuencia.java         Enumerado de consecuencias de una mision fallida
+TEjecucion.java            Enumerado de tipos de ejecucion
+TEstado.java               Enumerado de estados de una mision
+TEstadoSec.java            Enumerado de estados de un secuaz
+TMovimiento.java           Enumerado de tipos de movimiento
+TResultado.java            Enumerado de resultados de una ejecucion
+TRol.java                  Enumerado de roles
+TUso.java                  Enumerado de usos de un objeto

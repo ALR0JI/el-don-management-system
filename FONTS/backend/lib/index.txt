@@ -1,0 +1,7 @@
+Librerias que solo se usan en los tests.
+
+junit.jar, hamcrest.jar          JUnit 4
+mockito-core-4.9.0.jar           Mockito, para los mocks de los tests
+byte-buddy-1.12.16.jar           Dependencia de Mockito
+byte-buddy-agent-1.12.16.jar     Dependencia de Mockito
+objenesis-3.3.jar                Dependencia de Mockito

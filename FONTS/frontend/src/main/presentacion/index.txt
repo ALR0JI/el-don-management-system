@@ -1,0 +1,13 @@
+Vistas y controlador de presentacion (paquete presentacion).
+Todos los ficheros estan vacios, se implementan en la segunda entrega.
+
+CtrlPresentacion.java       Controlador de presentacion
+Main.java                   Punto de entrada de la aplicacion
+VistaFormularioMision.java  Formulario de mision
+VistaFormularioSecuaz.java  Formulario de secuaz
+VistaImportar.java          Importacion de ficheros
+VistaMisiones.java          Listado de misiones
+VistaPlanificacion.java     Planificacion de golpes
+VistaPrincipal.java         Ventana principal
+VistaRondaAutomatica.java   Ronda automatica
+VistaSecuaces.java          Listado de secuaces
