@@ -1,0 +1,5 @@
+Documentacion de la primera entrega.
+
+EsquemaUML.pdf              Diagrama estatico (modelo y controladores)
+CasosdeUso.pdf              Diagrama de casos de uso
+DOCUMENTACION_PROP.pdf      Documento con toda la informacion del proyecto para la primera entrega

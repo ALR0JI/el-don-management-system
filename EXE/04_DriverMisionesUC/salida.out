@@ -1,0 +1,1252 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: El botin de la mision ha de ser mayor que 0.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: La probabilidad de fracaso de la mision ha de estar entre 0 y 100.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: La duracion de la mision ha de ser mayor que 0.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: Todas las plantillas han de tener un conductor.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: Ya existe una misión con el nombre clave: Joyeria
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: No existe ninguna misión con el nombre clave: Fantasma
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): ERROR: La misión Joyeria ya es un prerrequisito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito: ERROR: No se puede añadir el prerrequisito porque se crearía un ciclo de dependencias.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito: ERROR: Una misión no puede depender de sí misma.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito: ERROR: La misión Joyeria ya es un prerrequisito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito: ERROR: No existe ninguna misión con el nombre clave: Fantasma
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito: Prerrequisito añadido con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito que se quiere eliminar: Prerrequisito eliminado con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión principal: Nombre clave de la misión prerrequisito que se quiere eliminar: ERROR: La misión Furgon no es un prerrequisito directo.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (solo uno): Cantidad: Rol de plantilla configurado con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (solo uno): Cantidad: Rol de plantilla configurado con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (solo uno): Cantidad: ERROR: No existe el rol: PILOTO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (solo uno): Cantidad: ERROR: La cantidad ha de ser mayor que 0.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol que se quiere eliminar de la plantilla: Rol eliminado de la plantilla con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol que se quiere eliminar de la plantilla: ERROR: No se permite eliminar el rol CONDUCTOR de la plantilla de una misión.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol que se quiere eliminar de la plantilla: ERROR: El rol HACKER no forma parte de la plantilla.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere modificar: Nueva ubicación: Nuevo botín: Nueva probabilidad de fracaso: Nueva duración (vacío para usar valor el por defecto 12): Misión modificada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere modificar: Nueva ubicación: Nuevo botín: Nueva probabilidad de fracaso: Nueva duración (vacío para usar valor el por defecto 12): ERROR: El botin de la mision ha de ser mayor que 0.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión a consultar: nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Joyeria | Diagonal | 9500 | 15.0 | 10 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión a consultar: ERROR: No existe ninguna misión con el nombre clave: Fantasma
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Banco_Central | Plaza Catalunya | 90000 | 40.0 | 24 | BLOQUEADA
+  Joyeria | Diagonal | 9500 | 15.0 | 10 | DISPONIBLE
+  Furgon |  | 5000 | 5.0 | 12 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Banco_Central | Plaza Catalunya | 90000 | 40.0 | 24 | BLOQUEADA
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Joyeria | Diagonal | 9500 | 15.0 | 10 | DISPONIBLE
+  Furgon |  | 5000 | 5.0 | 12 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere eliminar: ERROR: No se puede eliminar la misión porque hay otras misiones que dependen de ella.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere eliminar: Misión eliminada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere eliminar: ERROR: No existe ninguna misión con el nombre clave: Fantasma
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere modificar: Nueva ubicación: Nuevo botín: Nueva probabilidad de fracaso: Nueva duración (vacío para usar valor el por defecto 12): ERROR: No se puede editar una mision que ya ha sido ejecutada.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión: Rol (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (solo uno): Cantidad: ERROR: No se puede modifical la cantidad de una mision ya ejecutada.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave de la misión que se quiere eliminar: ERROR: No se puede eliminar la misión porque ya tiene ejecuciones registradas.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Atraco_Tren |  | 30000 | 25.0 | 12 | EN_CURSO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: El número introducido no es una opción válida
+
+Opcion: Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de PlanificacionUC ---
+ 1. Planificar estrategia global de misiones
+ 2. Mostrar este menú
+ 0. Salir
+
+Opcion: Secuencia optima de ejecución (nombreClave | ubicacion | botin | probFracaso | duracion | estado):
+  #1 -> Atraco_Tren |  | 30000 | 25.0 | 12 | EN_CURSO
+  #2 -> Joyeria | Diagonal | 9500 | 15.0 | 10 | DISPONIBLE
+  #3 -> Banco_Central | Plaza Catalunya | 90000 | 40.0 | 24 | BLOQUEADA
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

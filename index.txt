@@ -1,0 +1,8 @@
+PROP - Subgrupo 12.2 - Primera entrega
+Sistema de Gestio Criminal
+
+equipo.txt   Miembros del equipo y correos
+README.md    Como compilar, ejecutar los drivers y comprobar los juegos de prueba
+DOCS/        Documentacion de la entrega
+FONTS/       Codigo fuente y Makefile
+EXE/         Drivers compilados y juegos de prueba

@@ -1,0 +1,249 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 42
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de PlanificacionUC ---
+ 1. Planificar estrategia global de misiones
+ 2. Mostrar este menú
+ 0. Salir
+
+Opcion: Secuencia optima de ejecución (nombreClave | ubicacion | botin | probFracaso | duracion | estado):
+  #1 -> Robo_Licoreria |  | 20000 | 10.0 | 12 | DISPONIBLE
+  #2 -> Golpe_Merryweather |  | 2000000 | 30.0 | 12 | BLOQUEADA
+  #3 -> Asalto_Furgon |  | 10000 | 5.0 | 12 | DISPONIBLE
+  #4 -> Asalto_A_Rectorado |  | 5000 | 3.0 | 12 | DISPONIBLE
+  #5 -> Infiltracion_Lifeinvader |  | 5000 | 15.0 | 12 | BLOQUEADA
+  #6 -> Atraco_LasVenturas |  | 70000000 | 50.0 | 12 | BLOQUEADA
+  #7 -> Three_Leaf_Clover |  | 500000000 | 75.0 | 12 | BLOQUEADA
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Robo_Licoreria | 90.00 | 18000.00 | CONDUCTOR[1 Franklin] ASALTO[3 Trevor, 4 Packie McReary]
+  Asalto_Furgon | 95.00 | 9500.00 | CONDUCTOR[2 Cesar Vialpando] HACKER[6 Lester]
+  Asalto_A_Rectorado | 48.50 | 2425.00 | CONDUCTOR[7 Michael] NEGOCIADOR[8 Tony Prince]
+Misiones excluidas:
+  (ninguna)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Propuesta confirmada
+Sin avisos
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | EXITO
+2 | Asalto_Furgon | EXITO
+3 | Asalto_A_Rectorado | FRACASO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Three_Leaf_Clover |  | 500000000 | 75.0 | 12 | BLOQUEADA
+  Atraco_LasVenturas |  | 70000000 | 50.0 | 12 | BLOQUEADA
+  Golpe_Merryweather |  | 2000000 | 30.0 | 12 | DISPONIBLE
+  Robo_Licoreria |  | 20000 | 10.0 | 12 | COMPLETADA
+  Asalto_Furgon |  | 10000 | 5.0 | 12 | COMPLETADA
+  Asalto_A_Rectorado |  | 5000 | 3.0 | 12 | FALLIDA
+  Infiltracion_Lifeinvader |  | 5000 | 15.0 | 12 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de PlanificacionUC ---
+ 1. Planificar estrategia global de misiones
+ 2. Mostrar este menú
+ 0. Salir
+
+Opcion: Secuencia optima de ejecución (nombreClave | ubicacion | botin | probFracaso | duracion | estado):
+  #1 -> Golpe_Merryweather |  | 2000000 | 30.0 | 12 | DISPONIBLE
+  #2 -> Asalto_A_Rectorado |  | 5000 | 3.0 | 12 | FALLIDA
+  #3 -> Infiltracion_Lifeinvader |  | 5000 | 15.0 | 12 | DISPONIBLE
+  #4 -> Atraco_LasVenturas |  | 70000000 | 50.0 | 12 | BLOQUEADA
+  #5 -> Three_Leaf_Clover |  | 500000000 | 75.0 | 12 | BLOQUEADA
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

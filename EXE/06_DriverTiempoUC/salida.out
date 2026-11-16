@@ -1,0 +1,596 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 5
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Hora actual obtenida: 0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 2
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: ERROR: El numero de horas debe ser mayor que 0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: ERROR: El numero de horas debe ser mayor que 0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Se ha avanzado la hora y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Hora actual obtenida: 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 10 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | OCUPADO
+2 | Cesar Vialpando |  | CONDUCTOR | OCUPADO
+3 | Trevor |  | ASALTO | OCUPADO
+6 | Lester |  | HACKER | OCUPADO
+7 | Michael |  | CERRAJERO | OCUPADO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 13 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | FRACASO
+2 | Asalto_Furgon | FRACASO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Hora actual obtenida: 24
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | DETENIDO
+2 | Cesar Vialpando |  | CONDUCTOR | DETENIDO
+3 | Trevor |  | ASALTO | LIBRE
+4 | Packie McReary |  | ASALTO | LIBRE
+5 | CJ |  | ASALTO | LIBRE
+6 | Lester |  | HACKER | LIBRE
+7 | Michael |  | CERRAJERO | DETENIDO
+8 | Tony Prince |  | NEGOCIADOR | LIBRE
+9 | Roman |  | NEGOCIADOR | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: nombre | apodo | especialidad | precioFichaje
+Tito Manolo | El Petancas | ASALTO | 5000
+J Gorra | El Pantallas | HACKER | 13000
+Hustle Hard | El Padre | CERRAJERO | 10500
+Maxi Pa | El Camisas | NEGOCIADOR | 10000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 59 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | DETENIDO
+2 | Cesar Vialpando |  | CONDUCTOR | DETENIDO
+7 | Michael |  | CERRAJERO | DETENIDO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Se ha avanzado la hora y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: nombre | apodo | especialidad | precioFichaje
+Tito Manolo | El Petancas | ASALTO | 5000
+Raul Curisol | Clyde | CONDUCTOR | 9000
+Hustle Hard | El Padre | CERRAJERO | 10500
+Peter Sanchez | El Perro | NEGOCIADOR | 12500
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion:  0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Hora actual obtenida: 84
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: El número introducido no es una opción
+
+Opcion: Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

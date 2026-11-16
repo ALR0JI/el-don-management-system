@@ -1,0 +1,7 @@
+Juegos de DriverEjecucionUC (seleccion automatica y manual).
+
+entrada_sin_datos               Proponer y confirmar sin datos
+entrada_ronda_automatica        Dos rondas con los datos del enunciado
+entrada_personal_insuficiente   Solo tres secuaces para todas las misiones
+entrada_seleccion_manual        Previsualizar y ejecutar equipos, con errores
+Cada entrada .txt tiene su salida .out con el mismo nombre.

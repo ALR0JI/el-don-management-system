@@ -1,0 +1,123 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Nombre clave: Ubicación (vacío si no tiene): Botín: Probabilidad de fracaso (0.0 - 100.0): Duración en horas (vacío para usar valor el por defecto 12): Plantilla de roles (ej: CONDUCTOR 1 ASALTO 2): Prerrequisitos separados por un espacio (vacío si no tiene): Misión creada con éxito.
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de PlanificacionUC ---
+ 1. Planificar estrategia global de misiones
+ 2. Mostrar este menú
+ 0. Salir
+
+Opcion: Secuencia optima de ejecución (nombreClave | ubicacion | botin | probFracaso | duracion | estado):
+  #1 -> A |  | 5000 | 10.0 | 12 | DISPONIBLE
+  #2 -> C |  | 3000 | 10.0 | 12 | BLOQUEADA
+  #3 -> B |  | 1500 | 10.0 | 12 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

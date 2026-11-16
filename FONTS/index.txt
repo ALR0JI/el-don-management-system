@@ -1,0 +1,6 @@
+Codigo fuente del proyecto. Los comandos del Makefile se lanzan desde aqui (ver README.md).
+
+Makefile    Compila el codigo, los tests y los drivers
+backend/    Modelo, controladores y algoritmos (src/main), drivers (src/drivers),
+            tests JUnit (src/test) y librerias de test JUnit y Mockito (lib)
+frontend/   Interfaz grafica, pendiente de la segunda entrega

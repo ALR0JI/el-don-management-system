@@ -1,0 +1,9 @@
+Drivers y juegos de prueba. Se ejecutan desde FONTS con:
+  make driver IN=<carpeta>/<entrada>
+Las rutas son relativas a este directorio.
+
+out/        Drivers compilados (se genera con make compile-drivers)
+ejemplos/   Ficheros de secuaces y misiones del enunciado
+01 a 08     Juegos de prueba de cada driver. entrada*.txt es lo que se escribe
+            por teclado y salida*.out la salida que se obtiene. Cada juego esta
+            explicado en el apartado 5 de la documentacion.

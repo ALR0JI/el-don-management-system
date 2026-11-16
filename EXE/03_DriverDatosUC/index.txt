@@ -1,0 +1,8 @@
+Juego de DriverDatosUC (importar secuaces y misiones).
+
+entrada.txt              Entrada del juego
+salida.out               Salida que se obtiene
+secuaces_errores.txt     Secuaces con lineas correctas y erroneas
+misiones_errores.txt     Misiones con lineas correctas y erroneas
+misiones_ciclo.txt       Dos misiones que dependen una de la otra
+vacio.txt                Fichero vacio

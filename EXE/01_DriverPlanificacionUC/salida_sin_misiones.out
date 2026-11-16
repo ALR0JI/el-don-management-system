@@ -1,0 +1,34 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de PlanificacionUC ---
+ 1. Planificar estrategia global de misiones
+ 2. Mostrar este menú
+ 0. Salir
+
+Opcion: Secuencia optima de ejecución (nombreClave | ubicacion | botin | probFracaso | duracion | estado):
+  (ninguna misión registrada para planificar)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

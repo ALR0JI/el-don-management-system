@@ -1,0 +1,529 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 5
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Probabilidad de exito: 90.00 %
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Probabilidad de exito: 60.00 %
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Probabilidad de exito: 0.00 %
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Probabilidad de exito: 70.00 %
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Probabilidad de exito: 90.00 %
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: No existe el secuaz con id 99
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: No existe el rol PILOTO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: No existe la mision Mision_Inexistente
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: La mision tiene todo el material necesario
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: Secuaz nulo o repetido
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: Puesto mal cubierto: HACKER
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: La mision no se puede iniciar
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): ERROR: El secuaz 1 no esta libre
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 2
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Asalto_A_Rectorado | 48.50 | 2425.00 | CONDUCTOR[9 Roman] NEGOCIADOR[8 Tony Prince]
+Misiones excluidas:
+  (ninguna)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | FRACASO
+2 | Asalto_Furgon | EXITO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: ID | Nombre | Tipo | Inicio | Fin | Tiempo Restante | Resultado | Leida | Botin | Total Cobrado | Comision Don | Num Muertos | Num Detenidos | Material Perdido | Probabilidad Exito
+2 | Asalto_Furgon | MANUAL | 0 | 12 | 0 | EXITO | false | 10000 | 2000 | 8000 | 0 | 0 |  | 47.5
+1 | Robo_Licoreria | MANUAL | 0 | 12 | 0 | FRACASO | false | 20000 | 0 | 0 | 0 | 0 |  | 60.0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

@@ -1,0 +1,4 @@
+Juego de DriverSecuacesUC (secuaces y WantedIn).
+
+entrada.txt   Entrada del juego
+salida.out    Salida que se obtiene

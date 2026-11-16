@@ -1,0 +1,48 @@
+4
+1
+Soborno
+
+500
+10
+
+CONDUCTOR 1 NEGOCIADOR 1
+
+4
+1
+Robo_Joyeria
+
+40000
+10
+
+CONDUCTOR 1 CERRAJERO 1
+
+4
+1
+Planos_Banco
+
+2000
+10
+
+CONDUCTOR 1 HACKER 1
+Soborno
+4
+1
+Banco_Central
+
+900000
+10
+
+CONDUCTOR 1 ASALTO 2 HACKER 1
+Planos_Banco Robo_Joyeria
+4
+1
+Casino
+
+60000
+10
+
+CONDUCTOR 1 ASALTO 1
+
+5
+1
+0

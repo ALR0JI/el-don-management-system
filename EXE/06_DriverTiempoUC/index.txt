@@ -1,0 +1,4 @@
+Juego de DriverTiempoUC (avance del tiempo).
+
+entrada.txt   Entrada del juego
+salida.out    Salida que se obtiene

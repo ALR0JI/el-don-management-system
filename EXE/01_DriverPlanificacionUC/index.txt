@@ -1,0 +1,8 @@
+Juegos de DriverPlanificacionUC (planificacion de golpes).
+
+entrada_sin_misiones          Planificar sin ninguna mision
+entrada_ejemplo_enunciado     Ejemplo A, B, C del enunciado (orden A, C, B)
+entrada_fichero_enunciado     Misiones del fichero del enunciado
+entrada_cadena_dependencias   La mision de mas botin depende de la de menos
+entrada_tras_ejecuciones      Plan antes y despues de una ronda automatica
+Cada entrada .txt tiene su salida .out con el mismo nombre.

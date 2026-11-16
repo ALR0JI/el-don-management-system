@@ -1,0 +1,66 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  (ninguno)
+Misiones excluidas:
+  (ninguna)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Propuesta confirmada
+Sin avisos
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

@@ -1,0 +1,4 @@
+Juego de DriverSeguimientoUC (consultas y estadisticas).
+
+entrada.txt   Entrada del juego
+salida.out    Salida que se obtiene

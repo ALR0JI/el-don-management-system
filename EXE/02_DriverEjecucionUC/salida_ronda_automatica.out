@@ -1,0 +1,403 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 42
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Robo_Licoreria | 90.00 | 18000.00 | CONDUCTOR[1 Franklin] ASALTO[3 Trevor, 4 Packie McReary]
+  Asalto_Furgon | 95.00 | 9500.00 | CONDUCTOR[2 Cesar Vialpando] HACKER[6 Lester]
+  Asalto_A_Rectorado | 48.50 | 2425.00 | CONDUCTOR[7 Michael] NEGOCIADOR[8 Tony Prince]
+Misiones excluidas:
+  (ninguna)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Propuesta confirmada
+Sin avisos
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: ERROR: No hay ninguna propuesta pendiente de confirmar
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | OCUPADO
+2 | Cesar Vialpando |  | CONDUCTOR | OCUPADO
+3 | Trevor |  | ASALTO | OCUPADO
+4 | Packie McReary |  | ASALTO | OCUPADO
+5 | CJ |  | ASALTO | LIBRE
+6 | Lester |  | HACKER | OCUPADO
+7 | Michael |  | CERRAJERO | OCUPADO
+8 | Tony Prince |  | NEGOCIADOR | OCUPADO
+9 | Roman |  | NEGOCIADOR | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | EXITO
+2 | Asalto_Furgon | EXITO
+3 | Asalto_A_Rectorado | FRACASO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de MisionesUC --- 
+ En futuras implementaciones exsitirá la opcion de añadir / quitar material 
+
+ 1. Crear misión
+ 2. Modificar misión
+ 3. Eliminar misión
+ 4. Añadir prerrequisito
+ 5. Eliminar prerrequisito
+ 6. Definir rol en plantilla
+ 7. Eliminar rol de plantilla
+ 8. Consultar misión
+ 9. Listar misiones (con filtro de estado)
+10. Mostrar este menú
+ 0. Salir
+
+Opcion: Estado a filtrar (DISPONIBLE, BLOQUEADA, EN_CURSO, COMPLETADA, FALLIDA) (vacío = todos): nombreClave | ubicacion | botin | probFracaso | duracion | estado
+  Three_Leaf_Clover |  | 500000000 | 75.0 | 12 | BLOQUEADA
+  Atraco_LasVenturas |  | 70000000 | 50.0 | 12 | BLOQUEADA
+  Golpe_Merryweather |  | 2000000 | 30.0 | 12 | DISPONIBLE
+  Robo_Licoreria |  | 20000 | 10.0 | 12 | COMPLETADA
+  Asalto_Furgon |  | 10000 | 5.0 | 12 | COMPLETADA
+  Asalto_A_Rectorado |  | 5000 | 3.0 | 12 | FALLIDA
+  Infiltracion_Lifeinvader |  | 5000 | 15.0 | 12 | DISPONIBLE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Golpe_Merryweather | 70.00 | 1400000.00 | CONDUCTOR[1 Franklin, 2 Cesar Vialpando] ASALTO[3 Trevor, 4 Packie McReary] NEGOCIADOR[9 Roman]
+  Infiltracion_Lifeinvader | 28.33 | 1416.67 | CONDUCTOR[6 Lester] ASALTO[5 CJ] NEGOCIADOR[7 Michael]
+Misiones excluidas:
+  Asalto_A_Rectorado: no quedan secuaces libres suficientes en esta ronda
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Propuesta confirmada
+Sin avisos
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+4 | Golpe_Merryweather | FRACASO
+5 | Infiltracion_Lifeinvader | FRACASO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: El valor de caja es: 17200
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: ID | Momento | Tipo | Concepto | Importe
+1 | 12 | COMISION | Comisión Robo_Licoreria | 9000
+2 | 12 | COMISION | Comisión Asalto_Furgon | 8200
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

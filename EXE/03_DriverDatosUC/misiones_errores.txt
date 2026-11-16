@@ -1,0 +1,10 @@
+Robo_Banco 9000 [Conductor 1 Asalto 1] 20 []
+Botin_Raro mucho [Conductor 1] 10 []
+Sin_Plantilla 1000 [] 10 []
+Rol_Repetido 1000 [Conductor 1 Conductor 2] 10 []
+Sin_Conductor 1000 [Asalto 2] 10 []
+K_Invalida 1000 [Conductor 1] 150 []
+Botin_Negativo -500 [Conductor 1] 10 []
+Dep_Repetida 1000 [Conductor 1] 10 [Robo_Banco Robo_Banco]
+Linea mal escrita
+Dep_Fantasma 2000 [Conductor 1] 10 [Mision_Fantasma]

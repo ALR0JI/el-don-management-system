@@ -1,0 +1,2 @@
+Mision_A 1000 [Conductor 1] 10 [Mision_B]
+Mision_B 2000 [Conductor 1] 10 [Mision_A]

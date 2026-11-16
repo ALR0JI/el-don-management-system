@@ -1,0 +1,76 @@
+6
+6
+5
+1
+2
+
+1
+4
+
+6
+1
+Robo_Licoreria
+CONDUCTOR 1 ; ASALTO 3 4
+6
+1
+Robo_Licoreria
+CONDUCTOR 1 ; ASALTO 3 6
+6
+1
+Robo_Licoreria
+CONDUCTOR 6 ; ASALTO 7 8
+6
+1
+Golpe_Merryweather
+CONDUCTOR 1 2 ; ASALTO 3 4 ; NEGOCIADOR 8
+6
+1
+Robo_Licoreria
+conductor 1 ; asalto 3 4
+6
+1
+Robo_Licoreria
+CONDUCTOR 1 ; ASALTO 3 99
+6
+1
+Robo_Licoreria
+PILOTO 1 ; ASALTO 3 4
+6
+1
+Mision_Inexistente
+CONDUCTOR 1
+6
+2
+Robo_Licoreria
+6
+3
+Robo_Licoreria
+CONDUCTOR 1 ; ASALTO 3 3
+6
+3
+Asalto_Furgon
+CONDUCTOR 2
+6
+3
+Golpe_Merryweather
+CONDUCTOR 1 2 ; ASALTO 3 4 ; NEGOCIADOR 8
+6
+3
+Robo_Licoreria
+CONDUCTOR 1 ; ASALTO 3 6
+6
+3
+Asalto_Furgon
+CONDUCTOR 1 ; HACKER 7
+6
+3
+Asalto_Furgon
+CONDUCTOR 2 ; HACKER 7
+6
+4
+2
+3
+12
+7
+4
+0

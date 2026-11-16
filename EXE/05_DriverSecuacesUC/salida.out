@@ -1,0 +1,1262 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 2
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Se ha renovado la oferta
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado los secuaces
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): Secuaz añadido con id 10
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): Secuaz añadido con id 11
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): ERROR: El nombre no puede ser nulo ni vacío
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): ERROR: No existe la especialidad PILOTO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: Nombre: Apodo (vacio si no tiene): Secuaz modificado
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: Nombre: Apodo (vacio si no tiene): ERROR: No existe ningún secuaz con id 99
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | LIBRE
+2 | Cesar Vialpando |  | CONDUCTOR | LIBRE
+3 | Trevor |  | ASALTO | LIBRE
+4 | Packie McReary |  | ASALTO | LIBRE
+5 | CJ |  | ASALTO | LIBRE
+6 | Lester |  | HACKER | LIBRE
+7 | Michael |  | CERRAJERO | LIBRE
+8 | Tony Prince |  | NEGOCIADOR | LIBRE
+9 | Roman |  | NEGOCIADOR | LIBRE
+10 | Toni Soprano | Tonino | CONDUCTOR | LIBRE
+11 | Sara |  | HACKER | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | LIBRE
+2 | Cesar Vialpando |  | CONDUCTOR | LIBRE
+10 | Toni Soprano | Tonino | CONDUCTOR | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+6 | Lester |  | HACKER | LIBRE
+11 | Sara |  | HACKER | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: nombre | apodo | especialidad | precioFichaje
+Tito Manolo | El Petancas | ASALTO | 5000
+Alex Herrero | El Sobrino | HACKER | 7500
+Alicia Ageno | La Coordi | CONDUCTOR | 10000
+Andres Leal | El Biceps | ASALTO | 14000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR):nombre | apodo | especialidad | precioFichaje
+  (ninguno)
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR):nombre | apodo | especialidad | precioFichaje
+Tito Manolo | El Petancas | ASALTO | 5000
+Andres Leal | El Biceps | ASALTO | 14000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Don no tiene suficiente dinero para pagar este candidato
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: ERROR: No existe ningún candidato con nombre Nombre_Que_No_Esta
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: Id: 10
+Nombre: Toni Soprano
+Apodo: Tonino
+Especialidad: CONDUCTOR
+Estado: LIBRE
+Dinero acumulado: 0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: ERROR: No existe ningún secuaz con id 99
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: El secuaz ha sido expulsado con exito
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: El secuaz no esta libre y no puede ser expulsado
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: ERROR: No existe ningún secuaz con id 99
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: ERROR: El secuaz debe estar DETENIDO para pagarle la fianza
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: ERROR: No existe ningún secuaz con id 99
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 2
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Nombre clave de la mision: Equipo (formato: ROL id id ; ROL id ... p. ej. CONDUCTOR 1 ; ASALTO 3 4): Ejecucion iniciada con id 3
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: El secuaz no esta libre y no puede ser expulsado
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | EXITO
+2 | Asalto_Furgon | FRACASO
+3 | Asalto_A_Rectorado | FRACASO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+2 | Cesar Vialpando |  | CONDUCTOR | DETENIDO
+7 | Michael |  | CERRAJERO | DETENIDO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: Id: 2
+Nombre: Cesar Vialpando
+Apodo: 
+Especialidad: CONDUCTOR
+Estado: DETENIDO
+Dinero acumulado: 0
+Fianza: 1600
+Horas de condena restantes: 72
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: El valor de caja es: 9000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: El secuaz ha sido liberado con exito
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Id: Id: 2
+Nombre: Cesar Vialpando
+Apodo: 
+Especialidad: CONDUCTOR
+Estado: LIBRE
+Dinero acumulado: 0
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: El valor de caja es: 7400
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Ahora Tito Manolo, forma parte de tus secuaces!
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: ERROR: El candidato no esta en oferta
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR) (vacio = todas): Estados separados por espacio (LIBRE, OCUPADO, DETENIDO, MUERTO, EXPULSADO) (vacio = todos): id | nombre | apodo | especialidad | estado
+1 | Franklin |  | CONDUCTOR | LIBRE
+2 | Cesar Vialpando |  | CONDUCTOR | LIBRE
+3 | Trevor |  | ASALTO | LIBRE
+4 | Packie McReary |  | ASALTO | LIBRE
+5 | CJ |  | ASALTO | LIBRE
+6 | Lester |  | HACKER | LIBRE
+7 | Michael |  | CERRAJERO | DETENIDO
+8 | Tony Prince |  | NEGOCIADOR | LIBRE
+9 | Roman |  | NEGOCIADOR | LIBRE
+10 | Toni Soprano | Tonino | CONDUCTOR | LIBRE
+11 | Sara |  | HACKER | EXPULSADO
+12 | Tito Manolo | El Petancas | ASALTO | LIBRE
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: nombre | apodo | especialidad | precioFichaje
+Alex Herrero | El Sobrino | HACKER | 7500
+Alicia Ageno | La Coordi | CONDUCTOR | 10000
+Andres Leal | El Biceps | ASALTO | 14000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SeguimientoUC ---
+ 0. Salir
+ 1. Consultar Caja
+ 2. Consultar Movimientos
+ 3. Listar Ejecuciones En Curso
+ 4. Consultar Historial
+ 5. Numero No Leidas
+ 6. Abrir Notificaciones
+ 7. Estado de Cuentas
+ 8. Obtener Complice Habitual
+ 9. Hoja de Servicios
+ 10. Top 3 Operativos
+ 11. Top 3 Golpes Historicos
+ 12. Top 3 Puntos Calientes
+ 13. Cadena Prerrequisitos
+ 14. Desbloqueos Potenciales
+ 15. Mostrar Menú
+
+Opcion: El valor de caja es: 2400
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Se ha renovado la oferta
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: nombre | apodo | especialidad | precioFichaje
+Raul Curisol | Clyde | CONDUCTOR | 9000
+Tahira Montanyes | La Bomba | ASALTO | 11000
+Hustle Hard | El Padre | CERRAJERO | 10500
+Maxi Pa | El Camisas | NEGOCIADOR | 10000
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver

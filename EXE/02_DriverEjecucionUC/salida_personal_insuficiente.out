@@ -1,0 +1,249 @@
+=== DRIVER PRINCIPAL ===
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Semilla: Semilla fijada a 3
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): Secuaz añadido con id 1
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): Secuaz añadido con id 2
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de SecuacesUC ---
+ 0. Salir
+ 1. Añadir secuaz
+ 2. Modificar secuaz
+ 3. Expulsar secuaz
+ 4. Pagar fianza
+ 5. Listar secuaces (con filtros)
+ 6. Listar candidatos en oferta
+ 7. Listar candidatos en oferta por especialidad
+ 8. Fichar candidato
+ 9. Renovar oferta
+10. Mostrar este menu
+11. Consultar ficha de secuaz
+
+Opcion: Nombre: Apodo (vacio si no tiene): Especialidad (CONDUCTOR, ASALTO, HACKER, CERRAJERO, NEGOCIADOR): Secuaz añadido con id 3
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de DatosUC ---
+ 0. Salir
+ 1. Leer Secuaces
+ 2. Confirmar Secuaces
+ 3. Leer Misiones
+ 4. Confirmar Misiones
+ 5. Empezar Partida
+ 6. Mostrar Menu
+
+Opcion: Introduce la ruta del archivo a confirmar (vacio = ruta por defecto): Se han confirmado las misiones
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Robo_Licoreria | 60.00 | 12000.00 | CONDUCTOR[1 Franklin] ASALTO[2 Trevor, 3 Lester]
+Misiones excluidas:
+  Asalto_Furgon: no quedan secuaces libres suficientes en esta ronda
+  Asalto_A_Rectorado: no quedan secuaces libres suficientes en esta ronda
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: Propuesta confirmada
+Sin avisos
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de TiempoUC ---
+ 0. Salir
+ 1. Hora Actual
+ 2. Avanzar Hora
+ 3. Avanzar N Horas
+ 4. Mostrar Menu
+
+Opcion: Introduce el numero de horas a avanzar: Se han avanzado 12 horas y han terminado las siguientes misiones: 
+ID | Nombre Clave | Resultado
+1 | Robo_Licoreria | EXITO
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: --- Driver de EjecucionUC ---
+ 1. Previsualizar probabilidad de exito de un equipo
+ 2. Comprar material faltante de una mision
+ 3. Ejecutar mision manualmente
+ 4. Proponer ejecucion automatica
+ 5. Confirmar ejecucion automatica
+ 6. Fijar semilla del azar
+ 7. Mostrar este menu
+ 0. Salir
+
+Opcion: mision | probExito (%) | beneficioEsperado | equipo
+  Asalto_Furgon | 95.00 | 9500.00 | CONDUCTOR[1 Franklin] HACKER[3 Lester]
+Misiones excluidas:
+  Golpe_Merryweather: necesita 5 secuaces y solo hay 3 libres
+  Asalto_A_Rectorado: no quedan secuaces libres suficientes en esta ronda
+Volviendo al Driver Principal
+
+--- Menu principal ---
+ 1. Datos
+ 2. Tiempo
+ 3. Secuaces
+ 4. Misiones
+ 5. Planificacion de golpes
+ 6. Ejecucion y asignacion automatica
+ 7. Seguimiento
+ 8. Mostrar este menu
+ 0. Salir
+
+[Menu principal] Opcion: Fin del driver
